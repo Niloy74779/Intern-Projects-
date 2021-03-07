@@ -49,6 +49,10 @@ $(function () {
       $('.teacher_media4').slideToggle('slow');
   });
 
+  // Counter js
+  $('.counter_number').counterUp({
+		time: 3000
+	});
 
 
 

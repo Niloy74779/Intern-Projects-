@@ -1246,7 +1246,7 @@ p {
 }
 .price-btn i{
     animation: price-btn 15s infinite;
-    -webkit-animation: price-btn 8s infinite;
+    -webkit-animation: price-btn 5s infinite;
 }
 @keyframes price-btn {
     0%   {transform: rotate(0deg);}
@@ -1283,6 +1283,11 @@ p {
     font-size: 70px;
     line-height: 76px;
     font-weight: 800;
+}
+.counter_items p{
+    color: var(--main-color);
+    font-size: 20px;
+    font-weight: 700;
 }
 /* Counter Part End */
 
@@ -1371,7 +1376,7 @@ p {
     -o-transition: .5s;
     display: inline-block;
 }
-.footer3 ul li:hover i,
+
 .footer3 ul li:hover a{
     color: var(--main-color);
     transform: translateX(10px);
@@ -1380,15 +1385,23 @@ p {
     -ms-transform: translateX(10px);
     -o-transform: translateX(10px);
 }
+.footer3 ul li:hover i{
+    color: var(--main-color);
+    transform: translateX(15px);
+    -webkit-transform: translateX(15px);
+    -moz-transform: translateX(15px);
+    -ms-transform: translateX(15px);
+    -o-transform: translateX(15px);
+}
 .footer3 ul li i{
     padding-right: 5px;
     font-size: 15px;
     color: var(--main-color);
-    transition: .5s;
-    -webkit-transition: .5s;
-    -moz-transition: .5s;
-    -ms-transition: .5s;
-    -o-transition: .5s;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
 }
 
 .footer4 input{
