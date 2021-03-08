@@ -1,6 +1,25 @@
 $(function () {
 	"use strict";
   
+  //	menufix starts
+
+  var navOffset = $('.menu').offset().top;
+  $(window).scroll(function () {
+      var scrolling = $(this).scrollTop();
+      if (scrolling > navOffset) {
+          $('.menu').addClass('menufixed');
+      } else {
+          $('.menu').removeClass('menufixed');
+      }
+  });
+
+  //	menufix ends
+  $('.fancybox').fancybox({
+    arrows:false,
+    keyboard: false,
+
+  });
+
 
   // search bar js
     $(".search-bar").on("click", function(){
@@ -17,6 +36,37 @@ $(function () {
       'speed': 70,
       'direction':'left'
     });
+
+      // Road Map slick slider
+
+      $('.road-map-slider').slick({
+        autoplay: true,
+        infinite: true,
+        slidesToShow: 5,
+        slidesToScroll: 1, 
+        arrows: true,
+        dots:false, 
+        centerMode: true,
+        nextArrow:$('.arrow_left'),
+        prevArrow:$('.arrow_right'),
+   
+      });
+
+      // Road Map slick slider
+
+      $('.partners-img').slick({
+        autoplay: true,
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 1, 
+        arrows: true,
+        dots:false, 
+        centerMode: true,
+        nextArrow:$('.arrow_left'),
+        prevArrow:$('.arrow_right'),
+   
+      });
+      
 
     // team part,
 
