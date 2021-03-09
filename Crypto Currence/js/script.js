@@ -1,5 +1,10 @@
 $(function () {
 	"use strict";
+
+  // preloader
+  $(window).on('load',function(){
+    $('.praloder_main').delay(100).fadeOut(1000);
+});
   
   //	menufix starts
 
@@ -14,6 +19,29 @@ $(function () {
   });
 
   //	menufix ends
+
+  // back to top
+
+  $(window).scroll(function(){
+
+    if($(window).scrollTop() > 700){
+        $(".backTop").slideDown(100);
+        $(".backTop").css({
+            "display": "block"
+        });
+    }
+    else( 
+        $(".backTop").css({
+        "display": "none"
+    }))
+
+  });
+
+  $(".backTop").click(function() {
+    $('html, body').animate({
+        scrollTop:0,
+    });
+  });
 
   // Home page video part
   $('.fancybox').fancybox({
@@ -54,37 +82,22 @@ $(function () {
    
       });
       
+      // Team slick slider
 
-    // team part,
+      $('.team-slider').slick({
+        autoplay: true,
+        slidesToShow: 1,
+        slidesToScroll: 1, 
+        arrows:false,
+        dots:true, 
+        dotsClass:'slider_dots',
+      });
 
-    $('.one').on("click", function () {
-      $('.teacher1').toggleClass('teacher-click1');
-      $('.tech-button1 i').toggleClass('fas fa-times');
-      $('.tech-button1 i').toggleClass('fas fa-ellipsis-h');
-      $('.teacher_media1').slideToggle('slow');
-  });
+      // Expart Part
 
-  $('.two').on("click", function () {
-      $('.teacher2').toggleClass('teacher-click2');
-      $('.tech-button2 i').toggleClass('fas fa-times');
-      $('.tech-button2 i').toggleClass('fas fa-ellipsis-h');
-      $('.teacher_media2').slideToggle('slow');
-  });
-
-  $('.three').on("click", function () {
-      $('.teacher3').toggleClass('teacher-click3');
-      $('.tech-button3 i').toggleClass('fas fa-times');
-      $('.tech-button3 i').toggleClass('fas fa-ellipsis-h');
-      $('.teacher_media3').slideToggle('slow');
-  });
-
-
-  $('.fure').on("click", function () {
-      $('.teacher4').toggleClass('teacher-click4');
-      $('.tech-button4 i').toggleClass('fas fa-times');
-      $('.tech-button4 i').toggleClass('fas fa-ellipsis-h');
-      $('.teacher_media4').slideToggle('slow');
-  });
+      const tilt = $('.expart-profile').tilt({
+        scale:1.01,
+      })
 
   // Counter js
   $('.counter_number').counterUp({
@@ -92,54 +105,54 @@ $(function () {
 	});
 
 
-  // chart js\
+   // chart js\
 
-    var ctx = document.getElementById('myChart').getContext('2d');
-    var chart = new Chart(ctx, {
-      type: 'line',
-      data: {
-          labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-          datasets: [{
-              label: 'BitCoin Chart',
-              backgroundColor: '#6A1B4D',
-              borderColor: 'rgb(255, 99, 132)',
-              data: [0, 9, 5, 8, 27, 33, 40],
-              defaultFontFamily: 'Latosans-serif',
-          }],
-      },
-      options: {}
-  });
+   var ctx = document.getElementById('myChart').getContext('2d');
+   var chart = new Chart(ctx, {
+     type: 'line',
+     data: {
+         labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+         datasets: [{
+             label: 'BitCoin Chart',
+             backgroundColor: '#6A1B4D',
+             borderColor: 'rgb(255, 99, 132)',
+             data: [0, 9, 5, 8, 27, 33, 40],
+             defaultFontFamily: 'Latosans-serif',
+         }],
+     },
+     options: {}
+ });
 
-  var ctx = document.getElementById('myChart2').getContext('2d');
-  var chart = new Chart(ctx, {
-    type: 'line',
-    data: {
-        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-        datasets: [{
-            label: 'BitCoin Chart',
-            backgroundColor: '#6A1B4D',
-            borderColor: 'rgb(255, 99, 132)',
-            data: [0, 10, 5, 2, 20, 30, 40],
-            defaultFontFamily: 'Latosans-serif',
-        }],
-    },
-    options: {}
+ var ctx = document.getElementById('myChart2').getContext('2d');
+ var chart = new Chart(ctx, {
+   type: 'line',
+   data: {
+       labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+       datasets: [{
+           label: 'BitCoin Chart',
+           backgroundColor: '#6A1B4D',
+           borderColor: 'rgb(255, 99, 132)',
+           data: [0, 10, 5, 2, 20, 30, 40],
+           defaultFontFamily: 'Latosans-serif',
+       }],
+   },
+   options: {}
 });
 
 var ctx = document.getElementById('myChart3').getContext('2d');
 var chart = new Chart(ctx, {
-  type: 'line',
-  data: {
-      labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-      datasets: [{
-          label: 'BitCoin Chart',
-          backgroundColor: '#6A1B4D',
-          borderColor: 'rgb(255, 99, 132)',
-          data: [0, 5, 4, 39, 23, 29, 37],
-          defaultFontFamily: 'Latosans-serif',
-      }],
-  },
-  options: {}
+ type: 'line',
+ data: {
+     labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+     datasets: [{
+         label: 'BitCoin Chart',
+         backgroundColor: '#6A1B4D',
+         borderColor: 'rgb(255, 99, 132)',
+         data: [0, 5, 4, 39, 23, 29, 37],
+         defaultFontFamily: 'Latosans-serif',
+     }],
+ },
+ options: {}
 });
 
 
@@ -162,19 +175,19 @@ var chart = new Chart(ctx, {
 
 
 
-	// pogo slider
+ // pogo slider
 
-    $('#banner').pogoSlider({
-        autoplay: true,
-        autoplayTimeout: 7000,
-        displayProgess: true,
-        preserveTargetSize: true,
-        targetWidth: 1000,
-        targetHeight: 450,
-        responsive: true,
-        generateNav: false,
-      }).data('plugin_pogoSlider');
-    
+   $('#banner').pogoSlider({
+       autoplay: true,
+       autoplayTimeout: 7000,
+       displayProgess: true,
+       preserveTargetSize: true,
+       targetWidth: 1000,
+       targetHeight: 450,
+       responsive: true,
+       generateNav: false,
+     }).data('plugin_pogoSlider');
+   
 
 
 });    

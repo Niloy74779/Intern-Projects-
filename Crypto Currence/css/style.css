@@ -33,6 +33,9 @@ Version: 2345
 
     D. Service Page
     E. Blog Page
+        1. Blog Grid
+        2. Blog Part
+        3. Blog Details
     F. Contact Us Page
         1. Contact
 
@@ -42,6 +45,10 @@ Version: 2345
     H. 404 Page
     I. Sign Up Page
     J. Login Page
+    k. Team Page
+        1. Team Slider
+        2. Our Expart
+        3. Exparts 
     
  
  
@@ -86,6 +93,9 @@ ul,ol{
 a{
     text-decoration: none;
 }
+a:focus{
+    outline: none;
+}
 
 p {
     font-family: 'Poppins', sans-serif !important;
@@ -129,7 +139,7 @@ p {
     font-size: 16px;
     font-weight: 500;
     color: var(--pg-color);
-    padding: 0px 240px;
+    padding: 0px 300px;
     line-height: 26px;
     padding-top: 20px;
 }
@@ -278,12 +288,97 @@ p {
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
 }  
-
 /* animation btn */
+
+/* preloader */
+
+.praloder_main{
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: var(--bg-color-2);
+    z-index: 99;
+}
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#loader {
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #9370DB;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+#loader:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #BA55D3;
+    -webkit-animation: spin 3s linear infinite;
+    animation: spin 3s linear infinite;
+}
+#loader:after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #FF00FF;
+    -webkit-animation: spin 1.5s linear infinite;
+    animation: spin 1.5s linear infinite;
+}
+@-webkit-keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+/* preloader */
 
 /* back to top */
 
-/* .backTop{
+.backTop{
     position: fixed !important;
     right: 36px;
     bottom: 50px;
@@ -293,20 +388,31 @@ p {
 
 .backTop i{
     color: #fff;
-    background-image: linear-gradient(to right, #58d2f5, #00b8ef);
-    
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
     cursor: pointer;
-    padding:10px;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-    font-size: 22px;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    animation: backto-top 15s infinite;
+    -webkit-animation: backto-top 2s infinite;
+}
+
+@keyframes backto-top {
+    0%   { transform: translateY(-10px); -webkit-transform: translateY(-10px); -moz-transform: translateY(-10px); -ms-transform: translateY(-10px); -o-transform: translateY(-10px); }
+    100% { transform: translateY(-20px); -webkit-transform: translateY(-20px); -moz-transform: translateY(-20px); -ms-transform: translateY(-20px); -o-transform: translateY(-20px); }
+    0%   { transform: translateY(-15px); -webkit-transform: translateY(-15px); -moz-transform: translateY(-15px); -ms-transform: translateY(-15px); -o-transform: translateY(-15px); }
+    100% { transform: translateY(-30px); -webkit-transform: translateY(-30px); -moz-transform: translateY(-30px); -ms-transform: translateY(-30px); -o-transform: translateY(-30px); }
 }
 .backTop i:hover{
-    background-image: linear-gradient(to right,#00b8ef, #58d2f5 );
-} */
+    
+}
 
 
 
@@ -733,7 +839,7 @@ p {
     -o-transition: .5s;
 }
 .work-item:hover{
-    box-shadow:0 0 25px #E07C24;
+    box-shadow:0 0 30px rgb(184, 108, 41, 50%);
     transform: translateY(-25px);
     -webkit-transform: translateY(-25px);
     -moz-transform: translateY(-25px);
@@ -1091,161 +1197,7 @@ p {
 }
 /* Counter Part End */
 
-/* Team Part Start */
 
-#team{
-    padding: 80px 0;
-    background-color: var(--bg-color);
-}
-
-.teacher_id{
-    margin-top: 70px;
-    position: relative;
-}
-
-.teacher_id h4{
-    padding-top: 18px;
-    font-size: 32px;
-    font-family: 'Baloo 2', cursive !important;
-    color: var(--white);
-    text-transform: capitalize;
-    font-weight: 800;
-    transition: .5s;
-    -webkit-transition: .5s;
-    -moz-transition: .5s;
-    -ms-transition: .5s;
-    -o-transition: .5s;
-}
-.teacher_id p{
-    color: var(--main-color);
-    font-weight: 600;
-    margin-top: 10px;
-}
-
-.teacher_id img{
-    max-width: 100%;
-    height: auto;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-}
-
-.tech-button1,
-.tech-button2,
-.tech-button3,
-.tech-button4{
-    position: absolute;
-    top: 0;
-    right: 25px;
-    cursor: pointer;
-    display: inline-block;
-    border-radius: 50%;
-    background-color: var(--bg-color-2);
-    height: 60px;
-    width: 60px;
-    line-height: 75px;
-    text-align: center;
-    transition: .5s;
-    -webkit-transition: .5s;
-    -moz-transition: .5s;
-    -ms-transition: .5s;
-    -o-transition: .5s;
-}
-
-.tech-button1 i,
-.tech-button2 i,
-.tech-button3 i,
-.tech-button4 i{
-    font-size: 30px;
-    color: var(--pg-color);
-    transition: .5s;
-    -webkit-transition: .5s;
-    -moz-transition: .5s;
-    -ms-transition: .5s;
-    -o-transition: .5s;
-}
-
-.teacher_media1 li i,
-.teacher_media2 li i,
-.teacher_media3 li i,
-.teacher_media4 li i{
-    font-size: 17px;
-}
-
-.teacher_media1 li,
-.teacher_media2 li,
-.teacher_media3 li,
-.teacher_media4 li{
-    display: inline-block;
-    margin: 20px 10px;
-}
-
-
-.teacher_media1 li:first-child i,
-.teacher_media2 li:first-child i,
-.teacher_media3 li:first-child i,
-.teacher_media4 li:first-child i{
-    color: #3b5998;
-}
-
-
-.teacher_media1 li:nth-child(2) i,
-.teacher_media2 li:nth-child(2) i,
-.teacher_media3 li:nth-child(2) i,
-.teacher_media4 li:nth-child(2) i{
-    color: #1da1f2;
-}
-
-.teacher_media1 li:nth-child(3) i,
-.teacher_media2 li:nth-child(3) i,
-.teacher_media3 li:nth-child(3) i,
-.teacher_media4 li:nth-child(3) i {
-    color: #0077b5;
-}
-
-.teacher_media1 li:last-child i,
-.teacher_media2 li:last-child i,
-.teacher_media3 li:last-child i,
-.teacher_media4 li:last-child i {
-    color: #bd081c;
-}
-
-.teacher_media1,
-.teacher_media2,
-.teacher_media3,
-.teacher_media4{
-    display: none;
-}
-.teacher-click1 h4,
-.teacher-click2 h4,
-.teacher-click3 h4, 
-.teacher-click4 h4{
-    color: var(--main-color);
-}
-.teacher-click1 p,
-.teacher-click2 p,
-.teacher-click3 p, 
-.teacher-click4 p{
-    color: var(--pg-color);
-}
-
-.teacher-click1 .tech-button1,
-.teacher-click2 .tech-button2,
-.teacher-click3 .tech-button3, 
-.teacher-click4 .tech-button4 {
-    background-color: var(--main-color);
-}
-
-.teacher-click1 .tech-button1 i,
-.teacher-click2 .tech-button2 i,
-.teacher-click3 .tech-button3 i,
-.teacher-click4 .tech-button4 i{
-    color: var(--white);
-}
-
-/* Team Part End */
 
 /* Roade map Part Start */
 .road-map{
@@ -1450,7 +1402,7 @@ p {
 
 #blog{
     padding: 70px;
-    background-color: var(--bg-color-2);
+    background-color: var(--bg-color-3);
 }
 
 /* Blog Part End */
@@ -1810,7 +1762,80 @@ p {
 /* ============================ D. Service Page End ==================================== */
 
 
-/* ============================ E. Blog Page End ==================================== */
+/* ============================ E. Blog Page Start ==================================== */
+
+
+/* Blog Grid Part Start */
+
+#blog-grid{
+    padding: 80px 0;
+    background-color: var(--bg-color-3);
+}
+.blog-grid-item img{
+    width: 100%;
+    height: 300px !important;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+}
+.blog-grid-item{
+    border-radius: 10px;
+    background-color: #1d1d1d;
+    position: relative;
+}
+.blog-grid-content h3{
+    font-size: 22px;
+    line-height: 32px;
+    color: var(--white);
+    margin-top: 30px;
+}
+.blog-grid-content{
+    padding: 20px;
+}
+.blog-grid-content hr{
+    color: var(--pg-color);
+}
+.blog-grid-content p{
+    font-size: 17px;
+    line-height: 28px;
+    color: var(--pg-color);
+}
+.blog-grid-icon ul li{
+    color: var(--white);
+    display: inline-block;
+    font-size: 20px;
+    margin: 7px;
+    font-weight: 400;
+}
+
+.blog-grid-icon ul li i{
+    color: #E8BD0D;
+    transition: .5s ;
+}
+.blog-grid-icon ul li i:hover{
+    color: #E6425E;
+    transform: translateY(-5px);
+}
+.blog-grid-tag i,
+.blog-grid-tag a{
+    color: #fff;
+    font-size: 14px;
+}
+.blog-grid-tag{
+    position: absolute;
+    top: 43%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    padding: 13px;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 14px;
+    background-image: linear-gradient(45deg,#ff0048 0,#ff3870 50%,#c300c3 100%)!important;
+}
+
+/* Blog Grid Part End */
 
 
 /* Blog Part Start */
@@ -1824,7 +1849,6 @@ p {
     text-transform: uppercase;
     font-weight: 900;
     font-size: 28px;
-    margin: 0 0 20px;
     line-height: 40px;
 }
 .blog-item h2:hover{
@@ -1970,12 +1994,133 @@ p {
     -moz-transition: .5s;
     -ms-transition: .5s;
     -o-transition: .5s;
+    cursor: pointer;
 }
 .page-num ul li:hover{
     background-color: var(--main-color);
+    border-color: var(--main-color);
+    color: var(--white);
 }
 
 /* Blog Part End */
+
+
+/*Blog Details Part Start */
+.blog-details{
+    background-color: var(--bg-color) !important;
+}
+.blog-details .blog-item p{
+    color: #999;
+    font-size: 18px;
+    line-height: 30px;
+}
+.blog-details .blog-item strong{
+    font-size: 19px;
+    font-weight: 700;
+}
+.comment{
+    text-transform: uppercase;
+    color: #fff;
+}
+.blog-comment{
+    background-color: #1d1d1d;
+    padding:  30px;
+    border-radius: 10px;
+}
+.blog-comment.c-10{
+    margin-left: 130px !important;
+}
+.blog-comment img{
+    width: 100%;
+    border-radius: 50%;
+}
+.blog-athor-title h3{
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--white);
+}
+.blog-athor-title span{
+    color: var(--pg-color);
+}
+.blog-comment p{
+    color: #999;
+    line-height: 28px;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 20px 0;
+}
+.blog-comment a{
+    color: var(--main-color);
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.comment-from{
+    background-color: var(--bg-color-2);
+    margin: 30px 0;
+    padding: 50px;
+}
+.comment-from input{
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding-left: 20px;
+    height: 48px;
+    line-height: 48px;
+    clear: both;
+    color: var(--white);
+    border: none;
+    background: #202228;
+    border-bottom: 1px solid var(--pg-color);
+}
+.comment-from textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    padding-left: 20px;
+    line-height: 48px;
+    clear: both;
+    color: var(--white);
+    border: 1px solid #202228;
+    background: #202228;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.comment-from textarea:focus,
+.comment-from input:focus{
+    outline: none;
+    color: var(--white);
+    border-bottom: 1px solid var(--main-color);
+}
+
+.comment-from-btn::after,
+.comment-from-btn::before{
+    background: #ff3870;
+    box-shadow: 0 0 5px #ff3870,
+                0 0 15px #ff3870,
+                0 0 30px #ff3870,
+                0 0 60px #ff3870;
+}
+.blog-athor img{
+    border-radius: 50%;
+    height: auto;
+    width: 100%;
+}
+.blog-athor h5{
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--white);
+}
+.blog-athor span{
+    font-size: 17px;
+    color: #999;
+}
+.blog-athor span i{
+    color: var(--main-color);
+}
+/* Blog Details Part End */
 
 
 /* ============================ E. Blog Page End ==================================== */
@@ -2724,7 +2869,259 @@ body {
 /* login Part End */
 
 
-/* ============================ login Page ==================================== */
+/* ============================ J. login Page ==================================== */
+
+
+
+/* ============================ k. Team Page ==================================== */
+
+/* Team Slider Start */
+
+#exparts{
+    padding: 100px 0;
+}
+.team-mamber{
+    padding: 0 30px;
+}
+
+.team-mamber-img img{
+    height: auto;
+    border-radius: 15px !important;
+    width: 100%;
+}
+.team-mamber-info{
+    padding: 30px 20px;
+}
+.team-mamber-info h3 a{
+    color: #a2a2a2;
+    font-size: 34px;
+    line-height: 46px;
+}
+.team-mamber-info p {
+    font-weight: 400;
+    font-size: 17px;
+    color: #a2a2a2;
+    list-style: 26px;
+}
+.social-media-profile a{
+    margin: 30px 10px;
+    color: #a2a2a2;
+    font-size: 25px;
+    display: inline-block;
+}
+.social-media-profile a:nth-child(1){
+    color: #2827CC;
+}
+.social-media-profile a:nth-child(2){
+    color: #1B98F5;
+}
+.social-media-profile a:nth-child(3){
+    color: #cd486b;
+}
+.social-media-profile a:nth-child(4){
+    color: #3944F7;
+}
+.social-media-profile a:nth-child(5){
+    color: #E83A59;
+}
+
+.slider_dots{
+    padding-top: 50px;
+    width: 100%;
+    text-align: center;
+}
+.slider_dots li{
+    display: inline-block;
+    margin:0 5px;  
+}
+.slider_dots button{
+    height: 10px;
+    width: 10px;
+    padding: 4px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #CAD5E2;
+    cursor: pointer;
+    background: none;
+
+}
+.slider_dots .slick-active button {
+    border-color: var(--main-color);
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+.slider_dots .slick-active button:focus{
+    outline: none;
+}
+
+
+/* Team Slider End */
+
+
+/* Exparts Part Sart */
+
+.expart{
+    background-color:var(--bg-color-2);
+    position: relative !important;
+    padding: 90px 0;
+}
+.circle-1{
+    position: absolute;
+    left: 5%;
+    top: 25%;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    box-shadow: 0 0 40px #d84869;
+    background: linear-gradient(-26deg, #d84869, #f46641);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    animation: circle  4s infinite;
+    -webkit-animation: circle  4s infinite;
+}
+.circle-2{
+    position: absolute;
+    bottom: 5%;
+    right: 4%;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    box-shadow: 0 0 50px #5622ff;
+    background: linear-gradient(-180deg, #5622ff, #4190fd);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    animation: circle  4s infinite;
+    -webkit-animation: circle  4s infinite;
+}
+    
+@keyframes circle {
+    0% {
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+}
+    50% {
+        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+}
+    75% {
+        transform:rotate(270deg);
+        -webkit-transform:rotate(270deg);
+        -moz-transform:rotate(270deg);
+        -ms-transform:rotate(270deg);
+        -o-transform:rotate(270deg);
+}
+    100% {
+        transform:rotate(360deg);
+    }
+
+}
+
+.expart-profile{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: #ffffff1a;
+    padding: 24px;
+    border-radius: 20px;
+    border: 1px solid #0000002a;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    backdrop-filter: blur(-25px);
+    position: relative;
+    overflow: hidden;
+}
+.expart-profile::before{
+    content: " ";
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    top: 0;
+    left: -125%;
+    transform: skew(45deg);
+    animation-duration: left;
+    transition: .5s;
+    -webkit-transform: skew(45deg);
+    -moz-transform: skew(45deg);
+    -ms-transform: skew(45deg);
+    -o-transform: skew(45deg);
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    background: rgb(255, 255, 255, 15%);
+}
+.expart-profile:hover::before{
+    left: 125%;
+}
+.expart-img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: cover;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.expart-profile h2{
+    color: #ffffff60;
+    text-transform: uppercase;
+    margin: 15px 0;
+}
+.expart-profile span{
+    color: #999;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.expart-profile p{
+    color: var(--pg-color);
+    text-align: justify !important;
+}
+.expart-social a{
+    display: inline-block;
+    font-size: 25px;
+    margin: 0 10px;
+    color: var(--pg-color);
+    
+}
+
+.expart-social a:first-child{
+    color: #3944F7;
+}
+.expart-social a:nth-child(2){
+    color: #E21717;
+}
+.expart-social a:nth-child(3){
+    color: #1B98F5;
+}
+.expart-social a:nth-child(4){
+    color: #E83A59;
+}
+
+
+/* Exparts Part End */
+
+
+/* ============================ k. Team Page ==================================== */
 
 
 
