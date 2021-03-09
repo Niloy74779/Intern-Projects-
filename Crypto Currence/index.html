@@ -48,7 +48,7 @@
                             <ul>
                                 <li><i class="far fa-user pe-2"></i> <a href tabindex="0">My Account</a></li>
                                 <li><a href="Login.html">Login</a></li>
-                                <li><a href="sign up.html">Sign up</a></li>
+                                <li><a href="sign up.html">Registration</a></li>
                             </ul>
                         </div>
                         <div class="header-icon align-items-center ">
@@ -91,7 +91,7 @@
         <div class="collapse navbar-collapse " id="customnav">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center justify-content-center">
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link active" aria-current="page" href="home.html">Home</a>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link" href="#"> Pages <i class="fas fa-chevron-down"></i></a>
@@ -105,8 +105,14 @@
             <li class="nav-item">
                 <a class="nav-link" href="about.html">About</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Blog</a>
+            <li class="nav-item dropdown">
+                <a class="nav-link" href="#">Blog<i class="fas fa-chevron-down"></i></a>
+                <ul>
+                <li><a class="dropdown-item" href="blog left-sidebar.html">Blog Left Sidebar</a></li>
+                <li><a class="dropdown-item" href="blog right-sidebar.html">Blog Right Sidebar</a></li>
+                <li><a class="dropdown-item" href="blog details.html">Blog Details</a></li>
+                
+                </ul>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="price.html">Price</a>
@@ -283,9 +289,7 @@
                         <div class="chose-us-btn animation-btn d-inline-block">
                         <a href="#"> Learn More</a> 
                         </div> 
-                    
                 </div> 
-                
             </div>
 
             <div class="col-lg-4  text-center mt-5">
@@ -462,8 +466,8 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum corrupti maxime maiores cumque, fugit commodi eius nemo asperiores vero suscipit magnam itaque deserunt ex inventore sunt odio distinctio nesciunt blanditiis.</p>
                         <ul class="mt-3 ms-5">
                             <li><i class="fas fa-angle-double-right"></i><span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span></li>
-                            <li><i class="fas fa-angle-double-right"></i><span>Nostrum corrupti maxime maiores cumque, fugit commodi </span></li>
-                            <li><i class="fas fa-angle-double-right"></i><span>Lorem deserunt  distinctio nesciunt blanditiis.</span></li>
+                            <li><i class="fas fa-angle-double-right"></i><span>Nostrum corrupti maxime maiores cumque </span></li>
+                            <li><i class="fas fa-angle-double-right"></i><span>Lorem deserunt  distinctio.</span></li>
                             <li><i class="fas fa-angle-double-right"></i><span>Lorem ipsum dolor sit amet consectetur adipisicing.</span></li>
                             <li><i class="fas fa-angle-double-right"></i><span>Lorem ipsum dolor sit amet consectetur.</span></li>
                         </ul>
@@ -799,6 +803,25 @@
 <!--  FAQ Part End -->
 
 
+<!-- Blog Part Start -->
+
+    <section id="blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading text-center">
+                        <h2>Our <span>Blogs</span></h2>
+                        <p class="recent-job-p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Blog Part End -->
+
+
+
 <!-- Live Chart part Start -->
 
     <section id="live-chart">
@@ -806,46 +829,39 @@
             <div class="row">
                 <div class="col-12">
                     <div class="section-heading text-center">
-                        <h2>Token Sale <span>Proceeds</span></h2>
+                        <h2>BitCoin Live <span>Chart</span></h2>
                         <p class="recent-job-p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
                  </div>
-                 <div class="col-12 mt-4">
-                     <img src="images/jebin11.png" class="w-100" alt=""> 
+                 <div class="col-12">
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Today</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">This Week</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">This Month</button>
+                        </li>
+                      </ul>
+                      <div class="tab-content mt-5" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                            <canvas id="myChart"></canvas>
+                        </div>
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                            <canvas id="myChart2"></canvas>
+                        </div>
+                        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                            <canvas id="myChart3"></canvas>
+                        </div>
+                      </div>
                  </div>
             </div>
         </div>
     </section>
 
 <!-- Live Chart part End -->
-
-
-
-<!-- Our Partners part Start -->
-
-    <section id="partners">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="section-heading text-center">
-                        <h2>Our <span>Partners</span></h2>
-                        <p class="recent-job-p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    </div>
-                </div>
-                <div class="col-12 mt-5">
-                    <div class="partners-img">
-                        <img src="images/concern2.png" alt="partners-logo" class="w-75">
-                        <img src="images/concern4.png" alt="partners-logo" class="w-75">
-                        <img src="images/concern6.png" alt="partners-logo" class="w-75">
-                        <img src="images/concern7.png" alt="partners-logo" class="w-75">
-                        <img src="images/MOVREEL.png" alt="partners-logo" class="w-75"> 
-                    </div>
-                </div>
-            </div>      
-        </div>
-    </section>
-
-<!-- Our Partners part End -->
 
 
 <!-- footer part start -->
@@ -969,6 +985,9 @@
     <script src="js/waypoints.min.js"></script>
     <!-- slick slider js -->
     <script src="js/slick.min.js"></script>
+    <!-- link chart js -->
+    <!-- <script src="js/chart.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <!-- Infinite Scrolling Js -->
     <script src="js/infiniteslidev2.js"></script>
     <!-- Link Funcy box Plugin -->

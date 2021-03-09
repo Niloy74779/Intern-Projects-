@@ -14,10 +14,12 @@ $(function () {
   });
 
   //	menufix ends
+
+  // Home page video part
   $('.fancybox').fancybox({
     arrows:false,
     keyboard: false,
-
+    closeExisting: true
   });
 
 
@@ -43,21 +45,6 @@ $(function () {
         autoplay: true,
         infinite: true,
         slidesToShow: 5,
-        slidesToScroll: 1, 
-        arrows: true,
-        dots:false, 
-        centerMode: true,
-        nextArrow:$('.arrow_left'),
-        prevArrow:$('.arrow_right'),
-   
-      });
-
-      // Road Map slick slider
-
-      $('.partners-img').slick({
-        autoplay: true,
-        infinite: true,
-        slidesToShow: 4,
         slidesToScroll: 1, 
         arrows: true,
         dots:false, 
@@ -104,6 +91,56 @@ $(function () {
 		time: 3000
 	});
 
+
+  // chart js\
+
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var chart = new Chart(ctx, {
+      type: 'line',
+      data: {
+          labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+          datasets: [{
+              label: 'BitCoin Chart',
+              backgroundColor: '#6A1B4D',
+              borderColor: 'rgb(255, 99, 132)',
+              data: [0, 9, 5, 8, 27, 33, 40],
+              defaultFontFamily: 'Latosans-serif',
+          }],
+      },
+      options: {}
+  });
+
+  var ctx = document.getElementById('myChart2').getContext('2d');
+  var chart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+        datasets: [{
+            label: 'BitCoin Chart',
+            backgroundColor: '#6A1B4D',
+            borderColor: 'rgb(255, 99, 132)',
+            data: [0, 10, 5, 2, 20, 30, 40],
+            defaultFontFamily: 'Latosans-serif',
+        }],
+    },
+    options: {}
+});
+
+var ctx = document.getElementById('myChart3').getContext('2d');
+var chart = new Chart(ctx, {
+  type: 'line',
+  data: {
+      labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+      datasets: [{
+          label: 'BitCoin Chart',
+          backgroundColor: '#6A1B4D',
+          borderColor: 'rgb(255, 99, 132)',
+          data: [0, 5, 4, 39, 23, 29, 37],
+          defaultFontFamily: 'Latosans-serif',
+      }],
+  },
+  options: {}
+});
 
 
 
