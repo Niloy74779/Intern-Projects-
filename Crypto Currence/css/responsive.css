@@ -1,7 +1,50 @@
+
+
 @media(min-width:992px) and (max-width:1199px) { /* lg device */
-    
+    p{
+        font-size: 15px;
+    }
+    /* Section heading start */
+
+    .section-heading p {
+        padding: 0px 190px;
+    }
+
+    /* buy now part */
+
+    .buy-now-content h2{
+        font-size: 29px;
+        letter-spacing: 1px;
+    }
+    .buy-now-content h3{
+        font-size: 22px;
+    }
+    .buy-now-form h2{
+        font-size: 21px;
+        line-height: 30px;
+        padding-bottom: 10px;
+    }
 
 
+    /* blog grid part */
+
+    .blog-grid-tag i,
+    .blog-grid-tag a{
+        font-size: 13px;
+    }
+    .blog-grid-content h3{
+        font-size: 18px;
+        text-align: center;
+    }
+    .blog-grid-content{
+        padding: 15px;
+    }
+    .blog-grid-content p{
+        font-size: 15px;
+        text-align: center;
+    }
+
+  
 
   
     
@@ -10,7 +53,45 @@
 
 @media(min-width:768px) and (max-width:991px) { /* md device */
    
-   
+    /* Section heading start */
+
+    .section-heading p {
+        padding: 0px 80px;
+    }
+    
+    /* navbar part */
+    #customnav ul li ul{
+        top: 44px;
+        right: 20%;
+    }
+
+    /* price table part */
+    .table tr{
+        font-size: 14px !important;
+    }
+    
+    .up-icon{
+        color: #3DBE29;
+        font-size: 19px;
+    }
+    .down-icon{
+        color: #E21717;
+        font-size: 19px;
+    }
+
+    /* Counter Part */
+    .counter_items .counter_number{
+        color: var(--white);
+        font-size: 60px;
+        line-height: 76px;
+        font-weight: 800;
+    }
+    .counter_items p{
+        color: var(--main-color);
+        font-size: 17px;
+        font-weight: 700;
+    }
+    
 
 
 
@@ -20,8 +101,36 @@
 
 @media(min-width:576px) and (max-width:767px) { /* sm device */
   
-   
+    /* Section heading start */
 
+    .section-heading h2 {
+        font-size: 28px;
+    }
+    .section-heading p {
+        font-size: 16px;
+        padding: 0px 30px;
+    }
+
+    /* navbar part */
+    #customnav ul li ul{
+        top: 44px;
+        right: 15%;
+    }
+
+     /* price table part */
+     .table tr{
+        font-size: 14px !important;
+    }
+    
+    .up-icon{
+        color: #3DBE29;
+        font-size: 19px;
+    }
+    .down-icon{
+        color: #E21717;
+        font-size: 19px;
+    }
+    
 
 
 
@@ -33,7 +142,22 @@
 
 @media(max-width:575px) { /* xs device */
    
+    /* Section heading start */
 
+    .section-heading h2 {
+        font-size: 24px;
+    }
+    .section-heading p {
+        font-size: 15px;
+        padding: 0px;
+        width: 100%;
+    }
+
+     /* navbar part */
+     #customnav ul li ul{
+        top: 44px;
+        right: 20%;
+    }
 
     
 
@@ -43,7 +167,13 @@
 
 
 @media(max-width:375px){
-
+    /* .section-heading h2 {
+        font-size: 24px;
+    }
+    .section-heading p {
+        font-size: 15px;
+        padding: 0px;
+    } */
 
 }
 

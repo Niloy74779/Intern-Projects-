@@ -29,6 +29,14 @@
 </head>
 <body>
     
+<!-- preloader start -->
+<div class="praloder_main">
+    <div id="preloader">
+        <div id="loader"></div>
+      </div>
+</div>
+<!-- preloader end -->
+
 <!-- Top Header Part Start -->
 
 <header id="top-header">
@@ -46,9 +54,18 @@
                 <div class="top-header-right">
                     <div class="top-header-account">
                         <ul>
-                            <li><i class="far fa-user pe-2"></i> <a href tabindex="0">My Account</a></li>
+                            <li class="account"><i class="far fa-user pe-2"></i> <a href="#">My Account</a>
+                               <div class="account-content text-center">
+                                   <img src="images/team-11.jpg" alt="">
+                                   <ul>
+                                       <li>Name: Niloy</li>
+                                       <li>User Id: 3464362</li>
+                                   </ul>
+                                   <a href tabindex="0">LogOut</a>
+                               </div> 
+                            </li>
                             <li><a href="Login.html">Login</a></li>
-                            <li><a href="sign up.html">Sign up</a></li>
+                            <li><a href="sign up.html">Sign Up</a></li>
                         </ul>
                     </div>
                     <div class="header-icon align-items-center ">
@@ -96,20 +113,29 @@
         <li class="nav-item dropdown">
             <a class="nav-link" href="#"> Pages <i class="fas fa-chevron-down"></i></a>
             <ul>
+             <li><a class="dropdown-item" href="404.html">404 Page</a></li>
+            <li><a class="dropdown-item" href="price.html">Price</a></li>
             <li><a class="dropdown-item" href="Login.html">Login Page</a></li>
             <li><a class="dropdown-item" href="sign up.html">Sign Up page</a></li>
-            <li><a class="dropdown-item" href="404.html">404 Page</a></li>
+            <li><a class="dropdown-item" href="Team.html">Our Team</a></li>
+            </ul>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link" href="#">Blog<i class="fas fa-chevron-down"></i></a>
+            <ul>
+            <li><a class="dropdown-item" href="Blog grid.html">Blog Grid</a></li>
+             <li><a class="dropdown-item" href="blog details.html">Blog Details</a></li>
+            <li><a class="dropdown-item" href="blog left-sidebar.html">Blog Left Sidebar</a></li>
+            <li><a class="dropdown-item" href="blog right-sidebar.html">Blog Right Sidebar</a></li>
+           
             
             </ul>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Blog</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Coins</a>
+            <a class="nav-link" href="service.html">Service</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="contact.html">Contact</a>
@@ -117,11 +143,42 @@
         </ul>
         <div class="search-bar">
             <i class="fas fa-search"></i>
-            
         </div>
         <div class="nav-cart">
             <i class="fas fa-shopping-cart"></i>
-            <span> 0</span>
+            <span>2</span>
+            <div class="nav-cart-item">
+                 <div class="nav-cart-content">
+                     <div class="row">
+                         <div class="col-4">
+                            <img src="images/cart-1.jpg" class="w-100" alt="">
+                         </div>
+                         <div class="col-8">
+                            <a href="#">Bitcoin three</a>
+                            <i class="fas fa-times"></i>
+                            <h6>3 x $3.98</h6>
+                         </div>
+                     </div>
+                 </div>
+                 <hr>
+                 <div class="nav-cart-content">
+                    <div class="row">
+                        <div class="col-4">
+                           <img src="images/cart-2.jpg" class="w-100" alt="">
+                        </div>
+                        <div class="col-8">
+                           <a href="#">Product Five</a>
+                           <i class="fas fa-times"></i>
+                           <h6>1 x $54.8</h6>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="nav-cart-btn">
+                    <a href tabindex="0">View Cart</a>
+                    <a href tabindex="0">CheckOut</a>
+                </div>
+            </div>
         </div>
         
     </div>

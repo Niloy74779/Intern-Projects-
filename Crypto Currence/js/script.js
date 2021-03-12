@@ -20,6 +20,27 @@ $(function () {
 
   //	menufix ends
 
+  // search bar js
+  $(".search-bar").on("click", function(){
+    $(".search_box").slideDown(1000)
+  })
+
+  $(".close").on("click", function(){
+      $(".search_box").slideUp(1000)
+  })
+
+  // Nav cart 
+
+  $(".nav-cart > i").on("click", function(){
+    $(".nav-cart-item").slideToggle(600)
+  })
+
+  // Account part
+
+  $(".account > a").on("click", function(){
+    $(".account-content").slideToggle(700)
+  })
+
   // back to top
 
   $(window).scroll(function(){
@@ -51,15 +72,6 @@ $(function () {
   });
 
 
-  // search bar js
-    $(".search-bar").on("click", function(){
-      $(".search_box").slideDown(1000)
-    })
-
-    $(".close").on("click", function(){
-        $(".search_box").slideUp(1000)
-    })
-
     // Infinite Scrolling
 
     $('.demo').infiniteslide({
@@ -72,6 +84,7 @@ $(function () {
       $('.road-map-slider').slick({
         autoplay: true,
         infinite: true,
+        autoplaySpeed: 1500,
         slidesToShow: 5,
         slidesToScroll: 1, 
         arrows: true,
@@ -79,24 +92,42 @@ $(function () {
         centerMode: true,
         nextArrow:$('.arrow_left'),
         prevArrow:$('.arrow_right'),
+        responsive: [
+          {
+            breakpoint: 1200,
+            settings: {
+              slidesToShow: 4,
+            }
+          },
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+            }
+          },
+          {
+            breakpoint: 730,
+            settings: {
+              slidesToShow: 2,
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+            }
+          }
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ]
    
       });
-      
-      // Team slick slider
-
-      $('.team-slider').slick({
-        autoplay: true,
-        slidesToShow: 1,
-        slidesToScroll: 1, 
-        arrows:false,
-        dots:true, 
-        dotsClass:'slider_dots',
-      });
-
       // Expart Part
 
       const tilt = $('.expart-profile').tilt({
-        scale:1.01,
+        maxTilt: 4,
+        scale:1,
       })
 
   // Counter js
