@@ -1,75 +1,76 @@
 $(function () {
 	"use strict";
 
-  // preloader
-  $(window).on('load',function(){
-    $('.praloder_main').delay(100).fadeOut(1000);
-});
-  
+    // preloader
+    $(window).on('load',function(){
+      $('.praloder_main').delay(100).fadeOut(1000);
+    });
+    
   //	menufix starts
 
-  var navOffset = $('.menu').offset().top;
+  var navOffset = $('.customnav').offset().top;
   $(window).scroll(function () {
       var scrolling = $(this).scrollTop();
       if (scrolling > navOffset) {
-          $('.menu').addClass('menufixed');
+          $('.customnav').addClass('menufixed');
       } else {
-          $('.menu').removeClass('menufixed');
+          $('.customnav').removeClass('menufixed');
       }
   });
 
   //	menufix ends
 
-  // search bar js
-  $(".search-bar").on("click", function(){
-    $(".search_box").slideDown(1000)
-  })
+    // search bar js
+    $(".search-bar").on("click", function(){
+      $(".search_box").slideDown(1000)
+    })
 
-  $(".close").on("click", function(){
-      $(".search_box").slideUp(1000)
-  })
+    $(".close").on("click", function(){
+        $(".search_box").slideUp(1000)
+    })
 
-  // Nav cart 
+    // Nav cart 
 
-  $(".nav-cart > i").on("click", function(){
-    $(".nav-cart-item").slideToggle(600)
-  })
+    $(".nav-cart > i").on("click", function(){
+      $(".nav-cart-item").slideToggle(600)
+    })
+    
 
-  // Account part
+    // Account part
 
-  $(".account > a").on("click", function(){
-    $(".account-content").slideToggle(700)
-  })
+    $(".account > a").on("click", function(){
+      $(".account-content").slideToggle(700)
+    })
 
-  // back to top
+    // back to top
 
-  $(window).scroll(function(){
+    $(window).scroll(function(){
 
-    if($(window).scrollTop() > 700){
-        $(".backTop").slideDown(100);
-        $(".backTop").css({
-            "display": "block"
-        });
-    }
-    else( 
-        $(".backTop").css({
-        "display": "none"
-    }))
+      if($(window).scrollTop() > 700){
+          $(".backTop").slideDown(100);
+          $(".backTop").css({
+              "display": "block"
+          });
+      }
+      else( 
+          $(".backTop").css({
+          "display": "none"
+      }))
 
-  });
-
-  $(".backTop").click(function() {
-    $('html, body').animate({
-        scrollTop:0,
     });
-  });
 
-  // Home page video part
-  $('.fancybox').fancybox({
-    arrows:false,
-    keyboard: false,
-    closeExisting: true
-  });
+    $(".backTop").click(function() {
+      $('html, body').animate({
+          scrollTop:0,
+      });
+    });
+
+    // Home page video part
+    $('.fancybox').fancybox({
+      arrows:false,
+      keyboard: false,
+      closeExisting: true
+    });
 
 
     // Infinite Scrolling
@@ -117,18 +118,16 @@ $(function () {
               slidesToShow: 1,
             }
           }
-          // You can unslick at a given breakpoint now by adding:
-          // settings: "unslick"
-          // instead of a settings object
         ]
    
       });
-      // Expart Part
 
-      const tilt = $('.expart-profile').tilt({
+    // Expart Part
+
+    const tilt = $('.expart-profile').tilt({
         maxTilt: 4,
         scale:1,
-      })
+    })
 
   // Counter js
   $('.counter_number').counterUp({

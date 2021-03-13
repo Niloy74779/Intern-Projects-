@@ -29,6 +29,7 @@
 </head>
 <body>
     
+
 <!-- preloader start -->
 <div class="praloder_main">
     <div id="preloader">
@@ -42,7 +43,7 @@
 <header id="top-header">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-lg-5">
+            <div class="col-lg-5 text-center text-lg-start">
                 <div class="header-support">
                     <ul>
                         <li><i class="fas fa-envelope"></i><a href="mailto:mail@cryptocurrency.com">mail@cryptocurrency.com</a></li>
@@ -50,7 +51,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-lg-7 align-items-center text-end">
+            <div class="col-lg-7 py-2 py-lg-0 align-items-center text-center text-lg-end">
                 <div class="top-header-right">
                     <div class="top-header-account">
                         <ul>
@@ -100,11 +101,53 @@
     <nav class="navbar navbar-expand-lg menu">
     <div class="container">
     <a class="navbar-brand" href="#">
-        <img src="images/logo-dark.png" class="w-100" alt="Logo">
+        <img src="images/logo-dark.png" class="w-90" alt="Logo">
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#customnav" aria-controls="customnav" aria-expanded="false" aria-label="Toggle navigation">
+    <div class="d-lg-none d-flex">
+        <div class="search-bar">
+            <i class="fas fa-search"></i>
+        </div>
+        <div class="nav-cart">
+            <i class="fas fa-shopping-cart"></i>
+            <span>2</span>
+            <div class="nav-cart-item">
+                 <div class="nav-cart-content">
+                     <div class="row">
+                         <div class="col-4">
+                            <img src="images/cart-1.jpg" class="w-100" alt="">
+                         </div>
+                         <div class="col-8">
+                            <a href="#">Bitcoin three</a>
+                            <i class="fas fa-times"></i>
+                            <h6>3 x $3.98</h6>
+                         </div>
+                     </div>
+                 </div>
+                 <hr>
+                 <div class="nav-cart-content">
+                    <div class="row">
+                        <div class="col-4">
+                           <img src="images/cart-2.jpg" class="w-100" alt="">
+                        </div>
+                        <div class="col-8">
+                           <a href="#">Product Five</a>
+                           <i class="fas fa-times"></i>
+                           <h6>1 x $54.8</h6>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="nav-cart-btn">
+                    <a href tabindex="0">View Cart</a>
+                    <a href tabindex="0">CheckOut</a>
+                </div>
+            </div>
+        </div>
+        <button class="navbar-toggler ms-sm-3 ms-1" type="button" data-bs-toggle="collapse" data-bs-target="#customnav" aria-controls="customnav" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fas fa-bars"></i>
     </button>
+    </div>
+    
     <div class="collapse navbar-collapse " id="customnav">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center justify-content-center">
         <li class="nav-item">
@@ -141,10 +184,10 @@
             <a class="nav-link" href="contact.html">Contact</a>
         </li>
         </ul>
-        <div class="search-bar">
+        <div class="search-bar d-lg-block d-none">
             <i class="fas fa-search"></i>
         </div>
-        <div class="nav-cart">
+        <div class="nav-cart d-lg-block d-none">
             <i class="fas fa-shopping-cart"></i>
             <span>2</span>
             <div class="nav-cart-item">
@@ -187,6 +230,7 @@
 </div>
 
 <!-- Navbar End -->
+
 
 <!-- Breadcrumb part start -->
 
@@ -239,10 +283,10 @@
                             <div class="row align-items-center">
                                 <div class="col-7">
                                     <div class="row">
-                                        <div class="col-2">
+                                        <div class="col-sm-2 col-3">
                                             <img src="images/team-12.jpg" alt="">
                                         </div>
-                                        <div class="col-10">
+                                        <div class="col-sm-10 col-7">
                                             <h5>By John Doe</h5>
                                             <p>January 10, 2020</p>
                                         </div>
@@ -452,7 +496,6 @@
 <!-- Blog Part End -->
 
 
-
 <!-- back to top -->
 
 <div class="backTop">
@@ -470,7 +513,7 @@
                     <h3>Get New Insights Weekly</h3>
                     <p>News letter dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Enter your email Email Your Address </p>
                 </div>
-                <div class="col-lg-6 subscribe-input">
+                <div class="col-lg-6 subscribe-input mt-5">
                     <div class="subscribe-input">
                         <input type="email" placeholder="Enter Your Email">
                         <button type="submit">Subscribe</button>
@@ -482,13 +525,13 @@
 
 <!-- Subscribe part End -->
 
-
+  
 <!-- footer part start -->
 
     <footer class="top_footer">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-sm-6 col-12 pt-md-4 footer1">
+                <div class="col-lg-4 col-sm-6 col-12 mt-4 pt-md-4 footer1">
                     <a href="index.html" class="">
                         <img src="images/logo-dark.png" alt="Footer Logo">
                     </a>
@@ -505,7 +548,7 @@
                     </ul>
                 </div> 
 
-                <div class="col-lg-2 col-sm-6 col-12 footer3">
+                <div class="col-lg-2 col-sm-6 col-12 mt-4 footer3 ps-lg-0 ps-sm-5">
                     <h4>Useful Links</h4>
                    <ul>
                        <li><i class="fas fa-angle-double-right"> </i> <a href="about.html">About</a></li>
@@ -516,7 +559,7 @@
                    </ul>
                 </div> 
 
-                <div class="col-lg-3 col-sm-6 col-12 footer2">
+                <div class="col-lg-3 col-sm-6 col-12 mt-4 footer2">
                     <h4>Contact</h4>
 
                     <div class=" footer2_location">
@@ -548,7 +591,7 @@
                             
                 </div> 
 
-                <div class="col-lg-3 col-sm-6 col-12 footer4">
+                <div class="col-lg-3 col-sm-6 col-12 mt-4 footer4">
                     <h4>Newsletter</h4>
                     <input type="text" placeholder="Enter Your Email">
                     <div class="footer_btn animation-btn">
@@ -560,7 +603,7 @@
         </div>
     </footer>
 
-    <footer class="last_footer">
+    <footer class="last_footer d-md-block d-none">
         <div class="container">
             <div class="row justify-content-between">
                 <div class="col-8">
@@ -577,7 +620,6 @@
     </footer>
 
 <!-- footer part End -->
-
 
 
 

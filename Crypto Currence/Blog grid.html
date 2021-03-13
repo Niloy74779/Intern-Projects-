@@ -42,7 +42,7 @@
 <header id="top-header">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-lg-5">
+            <div class="col-lg-5 text-center text-lg-start">
                 <div class="header-support">
                     <ul>
                         <li><i class="fas fa-envelope"></i><a href="mailto:mail@cryptocurrency.com">mail@cryptocurrency.com</a></li>
@@ -50,7 +50,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-lg-7 align-items-center text-end">
+            <div class="col-lg-7 py-2 py-lg-0 align-items-center text-center text-lg-end">
                 <div class="top-header-right">
                     <div class="top-header-account">
                         <ul>
@@ -100,11 +100,53 @@
     <nav class="navbar navbar-expand-lg menu">
     <div class="container">
     <a class="navbar-brand" href="#">
-        <img src="images/logo-dark.png" class="w-100" alt="Logo">
+        <img src="images/logo-dark.png" class="w-90" alt="Logo">
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#customnav" aria-controls="customnav" aria-expanded="false" aria-label="Toggle navigation">
+    <div class="d-lg-none d-flex">
+        <div class="search-bar">
+            <i class="fas fa-search"></i>
+        </div>
+        <div class="nav-cart">
+            <i class="fas fa-shopping-cart"></i>
+            <span>2</span>
+            <div class="nav-cart-item">
+                 <div class="nav-cart-content">
+                     <div class="row">
+                         <div class="col-4">
+                            <img src="images/cart-1.jpg" class="w-100" alt="">
+                         </div>
+                         <div class="col-8">
+                            <a href="#">Bitcoin three</a>
+                            <i class="fas fa-times"></i>
+                            <h6>3 x $3.98</h6>
+                         </div>
+                     </div>
+                 </div>
+                 <hr>
+                 <div class="nav-cart-content">
+                    <div class="row">
+                        <div class="col-4">
+                           <img src="images/cart-2.jpg" class="w-100" alt="">
+                        </div>
+                        <div class="col-8">
+                           <a href="#">Product Five</a>
+                           <i class="fas fa-times"></i>
+                           <h6>1 x $54.8</h6>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="nav-cart-btn">
+                    <a href tabindex="0">View Cart</a>
+                    <a href tabindex="0">CheckOut</a>
+                </div>
+            </div>
+        </div>
+        <button class="navbar-toggler ms-sm-3 ms-1" type="button" data-bs-toggle="collapse" data-bs-target="#customnav" aria-controls="customnav" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fas fa-bars"></i>
     </button>
+    </div>
+    
     <div class="collapse navbar-collapse " id="customnav">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center justify-content-center">
         <li class="nav-item">
@@ -141,10 +183,10 @@
             <a class="nav-link" href="contact.html">Contact</a>
         </li>
         </ul>
-        <div class="search-bar">
+        <div class="search-bar d-lg-block d-none">
             <i class="fas fa-search"></i>
         </div>
-        <div class="nav-cart">
+        <div class="nav-cart d-lg-block d-none">
             <i class="fas fa-shopping-cart"></i>
             <span>2</span>
             <div class="nav-cart-item">
@@ -188,6 +230,7 @@
 
 <!-- Navbar End -->
 
+
 <!-- Breadcrumb part start -->
 
 <section id="Breadcrumb">
@@ -207,291 +250,301 @@
 
 <!-- Breadcrumb part end -->
 
+
 <!-- Blog Grid Part Start -->
 
-  <section id="blog-grid" class="py-5">
-      <div class="container">
-          <div class="row justify-content-center">
-              <div class="col-lg-4 mt-5">
-                  <div class="blog-grid-item">
-                      <div class="blog-grid-img">
-                        <img src="images/blog-img1.jpg"alt="">
-                        <div class="grid-overly">
-                            <div class="grid-overly-btn text-center">
-                                <a href="blog details.html">Read More <i class="fas fa-arrow-right"></i></a>
-                            </div>
-                            <div class="grid-overly-content text-center">
-                                <ul>
-                                    <li><a href tabindex="0"><i class="fas fa-user"></i> Admin</a></li>
-                                    <li><a href tabindex="0"><i class="far fa-clock"></i> 7 january 2021</a></li>
-                                    <li><a href tabindex="0"><i class="fas fa-comment"></i> (23)</a></li>
-                                </ul>
-                            </div>
+<section id="blog-grid" class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+               <div class="section-heading text-center">
+                   <h2>Latest<span>Blogs</span></h2>
+                   <p class="recent-job-p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+               </div>
+            </div>
+        </div>
+        <div class="row justify-content-around"> 
+            <div class="col-lg-4 col-md-6 mt-5">
+              <div class="blog-grid-item">
+                  <div class="blog-grid-img">
+                    <img src="images/blog-5.jpg"alt="">
+                    <div class="grid-overly">
+                        <div class="grid-overly-btn text-center">
+                            <a href="blog details.html">Read More <i class="fas fa-arrow-right"></i></a>
                         </div>
-                      </div>
-                      <div class="blog-grid-content">
-                          <div class="blog-grid-tag">
-                              <div class="row">
-                                  <div class="col-6">
-                                    <a href tabindex="0"><i class="fas fa-tags"></i> market, node</a>
-                                  </div>
-                                  <div class="col-6 text-end">
-                                    <i class="fas fa-calendar-alt"></i> 9 November 2017
-                                  </div>
-                              </div>
-                          </div>
-                          <a href="blog details.html">
-                            <h3>HOW CRYPTOCURRENCY BEGUN AND ITS IMPACT</h3>
-                          </a>
-                          <p class="py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet culpa quidem deleniti voluptatem, asperiores ducimus adipisci !.</p>
-                          <hr>
-                          <div class="blog-grid-icon">
+                        <div class="grid-overly-content text-center">
                             <ul>
-                                <li>Share</li>
-                                <li><a href tabindex="0"><i class="fab fa-facebook"></i></a></li>
-                                <li><a href tabindex="0"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href tabindex="0"><i class="fab fa-linkedin"></i></a></li>
-                                <li><a href tabindex="0"><i class="fab fa-instagram"></i></a></li>
-                                <li><a href tabindex="0"><i class="fab fa-pinterest"></i></a></li>
+                                <li><a href tabindex="0"><i class="fas fa-user"></i> Admin</a></li>
+                                <li><a href tabindex="0"><i class="far fa-clock"></i> 7 january 2021</a></li>
+                                <li><a href tabindex="0"><i class="fas fa-comment"></i> (23)</a></li>
                             </ul>
                         </div>
+                    </div>
+                  </div>
+                  <div class="blog-grid-content">
+                      <div class="blog-grid-tag">
+                          <div class="row">
+                              <div class="col-6">
+                                <a href tabindex="0"><i class="fas fa-tags"></i> market, node</a>
+                              </div>
+                              <div class="col-6 text-end">
+                                <a href tabindex="0"><i class="fas fa-calendar-alt"></i> 9 March 2017</a>
+                              </div>
+                          </div>
+                      </div>
+                      <a href="blog details.html">
+                        <h3>HOW CRYPTOCURRENCY BEGUN AND ITS IMPACT</h3>
+                      </a>
+                      <p class="py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet culpa quidem deleniti voluptatem, asperiores ducimus adipisci !.</p>
+                      <hr>
+                      <div class="blog-grid-icon">
+                        <ul>
+                            <li>Share</li>
+                            <li><a href tabindex="0"><i class="fab fa-facebook"></i></a></li>
+                            <li><a href tabindex="0"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href tabindex="0"><i class="fab fa-linkedin"></i></a></li>
+                            <li><a href tabindex="0"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href tabindex="0"><i class="fab fa-pinterest"></i></a></li>
+                        </ul>
+                    </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mt-5">
+              <div class="blog-grid-item">
+                  <div class="blog-grid-img">
+                    <img src="images/blog-img4.jpg"alt="">
+                    <div class="grid-overly">
+                        <div class="grid-overly-btn text-center">
+                            <a href="blog details.html">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                        <div class="grid-overly-content text-center">
+                            <ul>
+                                <li><a href tabindex="0"><i class="fas fa-user"></i> Admin</a></li>
+                                <li><a href tabindex="0"><i class="far fa-clock"></i> 7 january 2021</a></li>
+                                <li><a href tabindex="0"><i class="fas fa-comment"></i> (23)</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="blog-grid-content">
+                      <div class="blog-grid-tag">
+                          <div class="row">
+                              <div class="col-6">
+                                <a href tabindex="0"><i class="fas fa-tags"></i> market, node</a>
+                              </div>
+                              <div class="col-6 text-end">
+                                <a href tabindex="0"><i class="fas fa-calendar-alt"></i> 9 April 2017</a>
+                              </div>
+                          </div>
+                      </div>
+                      <a href="blog details.html">
+                        <h3>HOW CRYPTOCURRENCY BEGUN AND ITS IMPACT</h3>
+                      </a>
+                      <p class="py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet culpa quidem deleniti voluptatem, asperiores ducimus adipisci !.</p>
+                      <hr>
+                      <div class="blog-grid-icon">
+                        <ul>
+                            <li>Share</li>
+                            <li><a href tabindex="0"><i class="fab fa-facebook"></i></a></li>
+                            <li><a href tabindex="0"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href tabindex="0"><i class="fab fa-linkedin"></i></a></li>
+                            <li><a href tabindex="0"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href tabindex="0"><i class="fab fa-pinterest"></i></a></li>
+                        </ul>
+                    </div>
+                  </div>
+              </div>
+          </div> 
+          <div class="col-lg-4 col-md-6 mt-5">
+              <div class="blog-grid-item">
+                  <div class="blog-grid-img">
+                    <img src="images/bradcump-bg.jpg"alt="">
+                    <div class="grid-overly">
+                        <div class="grid-overly-btn text-center">
+                            <a href="blog details.html">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                        <div class="grid-overly-content text-center">
+                            <ul>
+                                <li><a href tabindex="0"><i class="fas fa-user"></i> Admin</a></li>
+                                <li><a href tabindex="0"><i class="far fa-clock"></i> 7 january 2021</a></li>
+                                <li><a href tabindex="0"><i class="fas fa-comment"></i> (23)</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="blog-grid-content">
+                      <div class="blog-grid-tag">
+                          <div class="row">
+                              <div class="col-6">
+                                <a href tabindex="0"><i class="fas fa-tags"></i> market, node</a>
+                              </div>
+                              <div class="col-6 text-end">
+                                <a href tabindex="0"><i class="fas fa-calendar-alt"></i> 9 May 2017</a>
+                              </div>
+                          </div>
+                      </div>
+                      <a href="blog details.html">
+                        <h3>HOW CRYPTOCURRENCY BEGUN AND ITS IMPACT</h3>
+                      </a>
+                      <p class="py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet culpa quidem deleniti voluptatem, asperiores ducimus adipisci !.</p>
+                      <hr>
+                      <div class="blog-grid-icon">
+                        <ul>
+                            <li>Share</li>
+                            <li><a href tabindex="0"><i class="fab fa-facebook"></i></a></li>
+                            <li><a href tabindex="0"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href tabindex="0"><i class="fab fa-linkedin"></i></a></li>
+                            <li><a href tabindex="0"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href tabindex="0"><i class="fab fa-pinterest"></i></a></li>
+                        </ul>
+                    </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mt-5">
+            <div class="blog-grid-item">
+                <div class="blog-grid-img">
+                  <img src="images/blog-5.jpg"alt="">
+                  <div class="grid-overly">
+                      <div class="grid-overly-btn text-center">
+                          <a href="blog details.html">Read More <i class="fas fa-arrow-right"></i></a>
+                      </div>
+                      <div class="grid-overly-content text-center">
+                          <ul>
+                              <li><a href tabindex="0"><i class="fas fa-user"></i> Admin</a></li>
+                              <li><a href tabindex="0"><i class="far fa-clock"></i> 7 january 2021</a></li>
+                              <li><a href tabindex="0"><i class="fas fa-comment"></i> (23)</a></li>
+                          </ul>
                       </div>
                   </div>
-              </div> 
-              <div class="col-lg-4 mt-5">
-                <div class="blog-grid-item">
-                    <div class="blog-grid-img">
-                      <img src="images/blog-5.jpg"alt="">
-                      <div class="grid-overly">
-                          <div class="grid-overly-btn text-center">
-                              <a href="blog details.html">Read More <i class="fas fa-arrow-right"></i></a>
-                          </div>
-                          <div class="grid-overly-content text-center">
-                              <ul>
-                                  <li><a href tabindex="0"><i class="fas fa-user"></i> Admin</a></li>
-                                  <li><a href tabindex="0"><i class="far fa-clock"></i> 7 january 2021</a></li>
-                                  <li><a href tabindex="0"><i class="fas fa-comment"></i> (23)</a></li>
-                              </ul>
-                          </div>
-                      </div>
-                    </div>
-                    <div class="blog-grid-content">
-                        <div class="blog-grid-tag">
-                            <div class="row">
-                                <div class="col-6">
-                                  <a href tabindex="0"><i class="fas fa-tags"></i> market, node</a>
-                                </div>
-                                <div class="col-6 text-end">
-                                  <i class="fas fa-calendar-alt"></i> 9 November 2017
-                                </div>
+                </div>
+                <div class="blog-grid-content">
+                    <div class="blog-grid-tag">
+                        <div class="row">
+                            <div class="col-6">
+                              <a href tabindex="0"><i class="fas fa-tags"></i> market, node</a>
+                            </div>
+                            <div class="col-6 text-end">
+                              <a href tabindex="0"><i class="fas fa-calendar-alt"></i> 9 March 2017</a>
                             </div>
                         </div>
-                        <a href="blog details.html">
-                          <h3>HOW CRYPTOCURRENCY BEGUN AND ITS IMPACT</h3>
-                        </a>
-                        <p class="py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet culpa quidem deleniti voluptatem, asperiores ducimus adipisci !.</p>
-                        <hr>
-                        <div class="blog-grid-icon">
+                    </div>
+                    <a href="blog details.html">
+                      <h3>HOW CRYPTOCURRENCY BEGUN AND ITS IMPACT</h3>
+                    </a>
+                    <p class="py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet culpa quidem deleniti voluptatem, asperiores ducimus adipisci !.</p>
+                    <hr>
+                    <div class="blog-grid-icon">
+                      <ul>
+                          <li>Share</li>
+                          <li><a href tabindex="0"><i class="fab fa-facebook"></i></a></li>
+                          <li><a href tabindex="0"><i class="fab fa-twitter"></i></a></li>
+                          <li><a href tabindex="0"><i class="fab fa-linkedin"></i></a></li>
+                          <li><a href tabindex="0"><i class="fab fa-instagram"></i></a></li>
+                          <li><a href tabindex="0"><i class="fab fa-pinterest"></i></a></li>
+                      </ul>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mt-5">
+            <div class="blog-grid-item">
+                <div class="blog-grid-img">
+                  <img src="images/blog-img4.jpg"alt="">
+                  <div class="grid-overly">
+                      <div class="grid-overly-btn text-center">
+                          <a href="blog details.html">Read More <i class="fas fa-arrow-right"></i></a>
+                      </div>
+                      <div class="grid-overly-content text-center">
                           <ul>
-                              <li>Share</li>
-                              <li><a href tabindex="0"><i class="fab fa-facebook"></i></a></li>
-                              <li><a href tabindex="0"><i class="fab fa-twitter"></i></a></li>
-                              <li><a href tabindex="0"><i class="fab fa-linkedin"></i></a></li>
-                              <li><a href tabindex="0"><i class="fab fa-instagram"></i></a></li>
-                              <li><a href tabindex="0"><i class="fab fa-pinterest"></i></a></li>
+                              <li><a href tabindex="0"><i class="fas fa-user"></i> Admin</a></li>
+                              <li><a href tabindex="0"><i class="far fa-clock"></i> 7 january 2021</a></li>
+                              <li><a href tabindex="0"><i class="fas fa-comment"></i> (23)</a></li>
                           </ul>
                       </div>
-                    </div>
+                  </div>
                 </div>
-            </div> 
-            <div class="col-lg-4 mt-5">
-                <div class="blog-grid-item">
-                    <div class="blog-grid-img">
-                      <img src="images/blog-img2.jpg"alt="">
-                      <div class="grid-overly">
-                          <div class="grid-overly-btn text-center">
-                              <a href="blog details.html">Read More <i class="fas fa-arrow-right"></i></a>
-                          </div>
-                          <div class="grid-overly-content text-center">
-                              <ul>
-                                  <li><a href tabindex="0"><i class="fas fa-user"></i> Admin</a></li>
-                                  <li><a href tabindex="0"><i class="far fa-clock"></i> 7 january 2021</a></li>
-                                  <li><a href tabindex="0"><i class="fas fa-comment"></i> (23)</a></li>
-                              </ul>
-                          </div>
-                      </div>
-                    </div>
-                    <div class="blog-grid-content">
-                        <div class="blog-grid-tag">
-                            <div class="row">
-                                <div class="col-6">
-                                  <a href tabindex="0"><i class="fas fa-tags"></i> market, node</a>
-                                </div>
-                                <div class="col-6 text-end">
-                                  <i class="fas fa-calendar-alt"></i> 9 November 2017
-                                </div>
+                <div class="blog-grid-content">
+                    <div class="blog-grid-tag">
+                        <div class="row">
+                            <div class="col-6">
+                              <a href tabindex="0"><i class="fas fa-tags"></i> market, node</a>
+                            </div>
+                            <div class="col-6 text-end">
+                              <a href tabindex="0"><i class="fas fa-calendar-alt"></i> 9 April 2017</a>
                             </div>
                         </div>
-                        <a href="blog details.html">
-                          <h3>HOW CRYPTOCURRENCY BEGUN AND ITS IMPACT</h3>
-                        </a>
-                        <p class="py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet culpa quidem deleniti voluptatem, asperiores ducimus adipisci !.</p>
-                        <hr>
-                        <div class="blog-grid-icon">
+                    </div>
+                    <a href="blog details.html">
+                      <h3>HOW CRYPTOCURRENCY BEGUN AND ITS IMPACT</h3>
+                    </a>
+                    <p class="py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet culpa quidem deleniti voluptatem, asperiores ducimus adipisci !.</p>
+                    <hr>
+                    <div class="blog-grid-icon">
+                      <ul>
+                          <li>Share</li>
+                          <li><a href tabindex="0"><i class="fab fa-facebook"></i></a></li>
+                          <li><a href tabindex="0"><i class="fab fa-twitter"></i></a></li>
+                          <li><a href tabindex="0"><i class="fab fa-linkedin"></i></a></li>
+                          <li><a href tabindex="0"><i class="fab fa-instagram"></i></a></li>
+                          <li><a href tabindex="0"><i class="fab fa-pinterest"></i></a></li>
+                      </ul>
+                  </div>
+                </div>
+            </div>
+        </div> 
+        <div class="col-lg-4 col-md-6 mt-5">
+            <div class="blog-grid-item">
+                <div class="blog-grid-img">
+                  <img src="images/bradcump-bg.jpg"alt="">
+                  <div class="grid-overly">
+                      <div class="grid-overly-btn text-center">
+                          <a href="blog details.html">Read More <i class="fas fa-arrow-right"></i></a>
+                      </div>
+                      <div class="grid-overly-content text-center">
                           <ul>
-                              <li>Share</li>
-                              <li><a href tabindex="0"><i class="fab fa-facebook"></i></a></li>
-                              <li><a href tabindex="0"><i class="fab fa-twitter"></i></a></li>
-                              <li><a href tabindex="0"><i class="fab fa-linkedin"></i></a></li>
-                              <li><a href tabindex="0"><i class="fab fa-instagram"></i></a></li>
-                              <li><a href tabindex="0"><i class="fab fa-pinterest"></i></a></li>
+                              <li><a href tabindex="0"><i class="fas fa-user"></i> Admin</a></li>
+                              <li><a href tabindex="0"><i class="far fa-clock"></i> 7 january 2021</a></li>
+                              <li><a href tabindex="0"><i class="fas fa-comment"></i> (23)</a></li>
                           </ul>
                       </div>
-                    </div>
+                  </div>
                 </div>
-            </div> 
-            <div class="col-lg-4 mt-5">
-                <div class="blog-grid-item">
-                    <div class="blog-grid-img">
-                      <img src="images/blog-img3.jpg"alt="">
-                      <div class="grid-overly">
-                          <div class="grid-overly-btn text-center">
-                              <a href="blog details.html">Read More <i class="fas fa-arrow-right"></i></a>
-                          </div>
-                          <div class="grid-overly-content text-center">
-                              <ul>
-                                  <li><a href tabindex="0"><i class="fas fa-user"></i> Admin</a></li>
-                                  <li><a href tabindex="0"><i class="far fa-clock"></i> 7 january 2021</a></li>
-                                  <li><a href tabindex="0"><i class="fas fa-comment"></i> (23)</a></li>
-                              </ul>
-                          </div>
-                      </div>
-                    </div>
-                    <div class="blog-grid-content">
-                        <div class="blog-grid-tag">
-                            <div class="row">
-                                <div class="col-6">
-                                  <a href tabindex="0"><i class="fas fa-tags"></i> market, node</a>
-                                </div>
-                                <div class="col-6 text-end">
-                                  <i class="fas fa-calendar-alt"></i> 9 November 2017
-                                </div>
+                <div class="blog-grid-content">
+                    <div class="blog-grid-tag">
+                        <div class="row">
+                            <div class="col-6">
+                              <a href tabindex="0"><i class="fas fa-tags"></i> market, node</a>
+                            </div>
+                            <div class="col-6 text-end">
+                              <a href tabindex="0"><i class="fas fa-calendar-alt"></i> 9 May 2017</a>
                             </div>
                         </div>
-                        <a href="blog details.html">
-                          <h3>HOW CRYPTOCURRENCY BEGUN AND ITS IMPACT</h3>
-                        </a>
-                        <p class="py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet culpa quidem deleniti voluptatem, asperiores ducimus adipisci !.</p>
-                        <hr>
-                        <div class="blog-grid-icon">
-                          <ul>
-                              <li>Share</li>
-                              <li><a href tabindex="0"><i class="fab fa-facebook"></i></a></li>
-                              <li><a href tabindex="0"><i class="fab fa-twitter"></i></a></li>
-                              <li><a href tabindex="0"><i class="fab fa-linkedin"></i></a></li>
-                              <li><a href tabindex="0"><i class="fab fa-instagram"></i></a></li>
-                              <li><a href tabindex="0"><i class="fab fa-pinterest"></i></a></li>
-                          </ul>
-                      </div>
                     </div>
+                    <a href="blog details.html">
+                      <h3>HOW CRYPTOCURRENCY BEGUN AND ITS IMPACT</h3>
+                    </a>
+                    <p class="py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet culpa quidem deleniti voluptatem, asperiores ducimus adipisci !.</p>
+                    <hr>
+                    <div class="blog-grid-icon">
+                      <ul>
+                          <li>Share</li>
+                          <li><a href tabindex="0"><i class="fab fa-facebook"></i></a></li>
+                          <li><a href tabindex="0"><i class="fab fa-twitter"></i></a></li>
+                          <li><a href tabindex="0"><i class="fab fa-linkedin"></i></a></li>
+                          <li><a href tabindex="0"><i class="fab fa-instagram"></i></a></li>
+                          <li><a href tabindex="0"><i class="fab fa-pinterest"></i></a></li>
+                      </ul>
+                  </div>
                 </div>
-            </div> 
-            <div class="col-lg-4 mt-5">
-                <div class="blog-grid-item">
-                    <div class="blog-grid-img">
-                      <img src="images/blog-img4.jpg"alt="">
-                      <div class="grid-overly">
-                          <div class="grid-overly-btn text-center">
-                              <a href="blog details.html">Read More <i class="fas fa-arrow-right"></i></a>
-                          </div>
-                          <div class="grid-overly-content text-center">
-                              <ul>
-                                  <li><a href tabindex="0"><i class="fas fa-user"></i> Admin</a></li>
-                                  <li><a href tabindex="0"><i class="far fa-clock"></i> 7 january 2021</a></li>
-                                  <li><a href tabindex="0"><i class="fas fa-comment"></i> (23)</a></li>
-                              </ul>
-                          </div>
-                      </div>
-                    </div>
-                    <div class="blog-grid-content">
-                        <div class="blog-grid-tag">
-                            <div class="row">
-                                <div class="col-6">
-                                  <a href tabindex="0"><i class="fas fa-tags"></i> market, node</a>
-                                </div>
-                                <div class="col-6 text-end">
-                                  <i class="fas fa-calendar-alt"></i> 9 November 2017
-                                </div>
-                            </div>
-                        </div>
-                        <a href="blog details.html">
-                          <h3>HOW CRYPTOCURRENCY BEGUN AND ITS IMPACT</h3>
-                        </a>
-                        <p class="py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet culpa quidem deleniti voluptatem, asperiores ducimus adipisci !.</p>
-                        <hr>
-                        <div class="blog-grid-icon">
-                          <ul>
-                              <li>Share</li>
-                              <li><a href tabindex="0"><i class="fab fa-facebook"></i></a></li>
-                              <li><a href tabindex="0"><i class="fab fa-twitter"></i></a></li>
-                              <li><a href tabindex="0"><i class="fab fa-linkedin"></i></a></li>
-                              <li><a href tabindex="0"><i class="fab fa-instagram"></i></a></li>
-                              <li><a href tabindex="0"><i class="fab fa-pinterest"></i></a></li>
-                          </ul>
-                      </div>
-                    </div>
-                </div>
-            </div> 
-            <div class="col-lg-4 mt-5">
-                <div class="blog-grid-item">
-                    <div class="blog-grid-img">
-                      <img src="images/bradcump-bg.jpg"alt="">
-                      <div class="grid-overly">
-                          <div class="grid-overly-btn text-center">
-                              <a href="blog details.html">Read More <i class="fas fa-arrow-right"></i></a>
-                          </div>
-                          <div class="grid-overly-content text-center">
-                              <ul>
-                                  <li><a href tabindex="0"><i class="fas fa-user"></i> Admin</a></li>
-                                  <li><a href tabindex="0"><i class="far fa-clock"></i> 7 january 2021</a></li>
-                                  <li><a href tabindex="0"><i class="fas fa-comment"></i> (23)</a></li>
-                              </ul>
-                          </div>
-                      </div>
-                    </div>
-                    <div class="blog-grid-content">
-                        <div class="blog-grid-tag">
-                            <div class="row">
-                                <div class="col-6">
-                                  <a href tabindex="0"><i class="fas fa-tags"></i> market, node</a>
-                                </div>
-                                <div class="col-6 text-end">
-                                  <i class="fas fa-calendar-alt"></i> 9 November 2017
-                                </div>
-                            </div>
-                        </div>
-                        <a href="blog details.html">
-                          <h3>HOW CRYPTOCURRENCY BEGUN AND ITS IMPACT</h3>
-                        </a>
-                        <p class="py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet culpa quidem deleniti voluptatem, asperiores ducimus adipisci !.</p>
-                        <hr>
-                        <div class="blog-grid-icon">
-                          <ul>
-                              <li>Share</li>
-                              <li><a href tabindex="0"><i class="fab fa-facebook"></i></a></li>
-                              <li><a href tabindex="0"><i class="fab fa-twitter"></i></a></li>
-                              <li><a href tabindex="0"><i class="fab fa-linkedin"></i></a></li>
-                              <li><a href tabindex="0"><i class="fab fa-instagram"></i></a></li>
-                              <li><a href tabindex="0"><i class="fab fa-pinterest"></i></a></li>
-                          </ul>
-                      </div>
-                    </div>
-                </div>
-            </div> 
-          </div>
-      </div>
-  </section>
-  
+            </div>
+        </div>
+          
+        </div>
+    </div>
+</section>
+
 <!-- Blog Grid Part End -->
 
 
@@ -513,7 +566,7 @@
                     <h3>Get New Insights Weekly</h3>
                     <p>News letter dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Enter your email Email Your Address </p>
                 </div>
-                <div class="col-lg-6 subscribe-input">
+                <div class="col-lg-6 subscribe-input mt-5">
                     <div class="subscribe-input">
                         <input type="email" placeholder="Enter Your Email">
                         <button type="submit">Subscribe</button>
@@ -525,13 +578,13 @@
 
 <!-- Subscribe part End -->
 
-
+  
 <!-- footer part start -->
 
     <footer class="top_footer">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-sm-6 col-12 pt-md-4 footer1">
+                <div class="col-lg-4 col-sm-6 col-12 mt-4 pt-md-4 footer1">
                     <a href="index.html" class="">
                         <img src="images/logo-dark.png" alt="Footer Logo">
                     </a>
@@ -548,7 +601,7 @@
                     </ul>
                 </div> 
 
-                <div class="col-lg-2 col-sm-6 col-12 footer3">
+                <div class="col-lg-2 col-sm-6 col-12 mt-4 footer3 ps-lg-0 ps-sm-5">
                     <h4>Useful Links</h4>
                    <ul>
                        <li><i class="fas fa-angle-double-right"> </i> <a href="about.html">About</a></li>
@@ -559,7 +612,7 @@
                    </ul>
                 </div> 
 
-                <div class="col-lg-3 col-sm-6 col-12 footer2">
+                <div class="col-lg-3 col-sm-6 col-12 mt-4 footer2">
                     <h4>Contact</h4>
 
                     <div class=" footer2_location">
@@ -591,7 +644,7 @@
                             
                 </div> 
 
-                <div class="col-lg-3 col-sm-6 col-12 footer4">
+                <div class="col-lg-3 col-sm-6 col-12 mt-4 footer4">
                     <h4>Newsletter</h4>
                     <input type="text" placeholder="Enter Your Email">
                     <div class="footer_btn animation-btn">
@@ -603,7 +656,7 @@
         </div>
     </footer>
 
-    <footer class="last_footer">
+    <footer class="last_footer d-md-block d-none">
         <div class="container">
             <div class="row justify-content-between">
                 <div class="col-8">
@@ -644,21 +697,6 @@
 
 
 
-
-
-
-
-
- <!-- <div class="container">
-     <div class="row">
-         <div class="col-12">
-            <div class="section-heading text-center">
-                <h2>Recent Jobs</h2>
-                <p class="recent-job-p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-         </div>
-     </div>
- </div> -->
 
 
     <!-- Link Jquery -->

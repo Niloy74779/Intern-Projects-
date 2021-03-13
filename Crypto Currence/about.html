@@ -42,7 +42,7 @@
 <header id="top-header">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-lg-5">
+            <div class="col-lg-5 text-center text-lg-start">
                 <div class="header-support">
                     <ul>
                         <li><i class="fas fa-envelope"></i><a href="mailto:mail@cryptocurrency.com">mail@cryptocurrency.com</a></li>
@@ -50,7 +50,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-lg-7 align-items-center text-end">
+            <div class="col-lg-7 py-2 py-lg-0 align-items-center text-center text-lg-end">
                 <div class="top-header-right">
                     <div class="top-header-account">
                         <ul>
@@ -96,95 +96,137 @@
     </div>
 </div> <!-- search box -->
 
-<div class="customnav w-100">
-    <nav class="navbar navbar-expand-lg menu">
-    <div class="container">
-    <a class="navbar-brand" href="#">
-        <img src="images/logo-dark.png" class="w-100" alt="Logo">
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#customnav" aria-controls="customnav" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fas fa-bars"></i>
-    </button>
-    <div class="collapse navbar-collapse " id="customnav">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center justify-content-center">
-        <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-        </li>
-        <li class="nav-item dropdown">
-            <a class="nav-link" href="#"> Pages <i class="fas fa-chevron-down"></i></a>
-            <ul>
-             <li><a class="dropdown-item" href="404.html">404 Page</a></li>
-            <li><a class="dropdown-item" href="price.html">Price</a></li>
-            <li><a class="dropdown-item" href="Login.html">Login Page</a></li>
-            <li><a class="dropdown-item" href="sign up.html">Sign Up page</a></li>
-            <li><a class="dropdown-item" href="Team.html">Our Team</a></li>
-            </ul>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
-        </li>
-        <li class="nav-item dropdown">
-            <a class="nav-link" href="#">Blog<i class="fas fa-chevron-down"></i></a>
-            <ul>
-            <li><a class="dropdown-item" href="Blog grid.html">Blog Grid</a></li>
-             <li><a class="dropdown-item" href="blog details.html">Blog Details</a></li>
-            <li><a class="dropdown-item" href="blog left-sidebar.html">Blog Left Sidebar</a></li>
-            <li><a class="dropdown-item" href="blog right-sidebar.html">Blog Right Sidebar</a></li>
-           
-            
-            </ul>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="service.html">Service</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-        </li>
-        </ul>
-        <div class="search-bar">
-            <i class="fas fa-search"></i>
-        </div>
-        <div class="nav-cart">
-            <i class="fas fa-shopping-cart"></i>
-            <span>2</span>
-            <div class="nav-cart-item">
-                 <div class="nav-cart-content">
-                     <div class="row">
-                         <div class="col-4">
-                            <img src="images/cart-1.jpg" class="w-100" alt="">
-                         </div>
-                         <div class="col-8">
-                            <a href="#">Bitcoin three</a>
-                            <i class="fas fa-times"></i>
-                            <h6>3 x $3.98</h6>
-                         </div>
-                     </div>
-                 </div>
-                 <hr>
-                 <div class="nav-cart-content">
-                    <div class="row">
-                        <div class="col-4">
-                           <img src="images/cart-2.jpg" class="w-100" alt="">
-                        </div>
-                        <div class="col-8">
-                           <a href="#">Product Five</a>
-                           <i class="fas fa-times"></i>
-                           <h6>1 x $54.8</h6>
+    <div class="customnav w-100">
+        <nav class="navbar navbar-expand-lg menu">
+        <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="images/logo-dark.png" class="w-90" alt="Logo">
+        </a>
+        <div class="d-lg-none d-flex">
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="nav-cart">
+                <i class="fas fa-shopping-cart"></i>
+                <span>2</span>
+                <div class="nav-cart-item">
+                    <div class="nav-cart-content">
+                        <div class="row">
+                            <div class="col-4">
+                                <img src="images/cart-1.jpg" class="w-100" alt="">
+                            </div>
+                            <div class="col-8">
+                                <a href="#">Bitcoin three</a>
+                                <i class="fas fa-times"></i>
+                                <h6>3 x $3.98</h6>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <hr>
-                <div class="nav-cart-btn">
-                    <a href tabindex="0">View Cart</a>
-                    <a href tabindex="0">CheckOut</a>
+                    <hr>
+                    <div class="nav-cart-content">
+                        <div class="row">
+                            <div class="col-4">
+                            <img src="images/cart-2.jpg" class="w-100" alt="">
+                            </div>
+                            <div class="col-8">
+                            <a href="#">Product Five</a>
+                            <i class="fas fa-times"></i>
+                            <h6>1 x $54.8</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="nav-cart-btn">
+                        <a href tabindex="0">View Cart</a>
+                        <a href tabindex="0">CheckOut</a>
+                    </div>
                 </div>
             </div>
+            <button class="navbar-toggler ms-sm-3 ms-1" type="button" data-bs-toggle="collapse" data-bs-target="#customnav" aria-controls="customnav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
         </div>
         
+        <div class="collapse navbar-collapse " id="customnav">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link" href="#"> Pages <i class="fas fa-chevron-down"></i></a>
+                <ul>
+                <li><a class="dropdown-item" href="404.html">404 Page</a></li>
+                <li><a class="dropdown-item" href="price.html">Price</a></li>
+                <li><a class="dropdown-item" href="Login.html">Login Page</a></li>
+                <li><a class="dropdown-item" href="sign up.html">Sign Up page</a></li>
+                <li><a class="dropdown-item" href="Team.html">Our Team</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link" href="#">Blog<i class="fas fa-chevron-down"></i></a>
+                <ul>
+                <li><a class="dropdown-item" href="Blog grid.html">Blog Grid</a></li>
+                <li><a class="dropdown-item" href="blog details.html">Blog Details</a></li>
+                <li><a class="dropdown-item" href="blog left-sidebar.html">Blog Left Sidebar</a></li>
+                <li><a class="dropdown-item" href="blog right-sidebar.html">Blog Right Sidebar</a></li>
+            
+                
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="service.html">Service</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            </ul>
+            <div class="search-bar d-lg-block d-none">
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="nav-cart d-lg-block d-none">
+                <i class="fas fa-shopping-cart"></i>
+                <span>2</span>
+                <div class="nav-cart-item">
+                    <div class="nav-cart-content">
+                        <div class="row">
+                            <div class="col-4">
+                                <img src="images/cart-1.jpg" class="w-100" alt="">
+                            </div>
+                            <div class="col-8">
+                                <a href="#">Bitcoin three</a>
+                                <i class="fas fa-times"></i>
+                                <h6>3 x $3.98</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="nav-cart-content">
+                        <div class="row">
+                            <div class="col-4">
+                            <img src="images/cart-2.jpg" class="w-100" alt="">
+                            </div>
+                            <div class="col-8">
+                            <a href="#">Product Five</a>
+                            <i class="fas fa-times"></i>
+                            <h6>1 x $54.8</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="nav-cart-btn">
+                        <a href tabindex="0">View Cart</a>
+                        <a href tabindex="0">CheckOut</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        </div>
+    </nav>
     </div>
-    </div>
-</nav>
-</div>
 
 <!-- Navbar End -->
 
@@ -220,13 +262,13 @@
                     </div>
                  </div>
             </div>
-            <div class="row mt-4">
-                <div class="col-lg-6">
+            <div class="row mt-4  justify-content-center">
+                <div class="col-lg-6 col-12 text-center">
                     <div class="about-img">
                         <img src="images/about-us.png" alt="">
                     </div>
                 </div>
-                <div class="col-lg-6 about-content">
+                <div class="col-lg-6 col-12 about-content">
                     <h3>We Are <span>BitCoin</span></h3>
                     <p class="py-4">Bitcoin is based on a protocol known as the blockchain, which allows to create, transfer and verify ultra-secure financial data without interference of third parties.</p>
 
@@ -259,20 +301,22 @@
 
 <!-- Infinite Scrolling Start -->
 
-<section id="Scrolling" class="fixed-bottom">
-    <div class="row p-0 m-0">
-        <div class="col-12">
-            <ul class="demo">
-                <li><img src="images/Infinite Scrolling1.jpg" alt="Infinite Scrolling icon"><p>BTC: <span>€ 8,699.231.08 %</span></p></li>
-                <li><img src="images/Infinite Scrolling2.jpg" alt="Infinite Scrolling icon"><p>ETH: <span>Ƀ 0.08160-0.28 %</span></p></li>
-                <li><img src="images/Infinite Scrolling3.jpg" alt="Infinite Scrolling icon"><p>XMR: <span>Ƀ 0.02761.25 %</span></p></li>
-                <li><img src="images/Infinite Scrolling4.jpg" alt="Infinite Scrolling icon"><p> LTC: <span>Ƀ 0.01956-0.20 %</span></p></li>
-                <li><img src="images/Infinite Scrolling2.jpg" alt="Infinite Scrolling icon"><p> DASH: <span>Ƀ 0.055900.26 %</span></p></li>
-                <li><img src="images/favicon.jpg" alt="Infinite Scrolling icon"><p>LTC: <span>$ 208.06-1.97 %</span></p></li>
-            </ul>
-        </div>
-    </div>
-</section>
+    <section id="Scrolling" class="fixed-bottom">
+        <div class="container">
+            <div class="row p-0 m-0">
+                <div class="col-12">
+                    <ul class="demo">
+                        <li><img src="images/Infinite Scrolling1.jpg" alt="Infinite Scrolling icon"><p>BTC: <span>€ 8,699.231.08 %</span></p></li>
+                        <li><img src="images/Infinite Scrolling2.jpg" alt="Infinite Scrolling icon"><p>ETH: <span>Ƀ 0.08160-0.28 %</span></p></li>
+                        <li><img src="images/Infinite Scrolling3.jpg" alt="Infinite Scrolling icon"><p>XMR: <span>Ƀ 0.02761.25 %</span></p></li>
+                        <li><img src="images/Infinite Scrolling4.jpg" alt="Infinite Scrolling icon"><p> LTC: <span>Ƀ 0.01956-0.20 %</span></p></li>
+                        <li><img src="images/Infinite Scrolling2.jpg" alt="Infinite Scrolling icon"><p> DASH: <span>Ƀ 0.055900.26 %</span></p></li>
+                        <li><img src="images/favicon.jpg" alt="Infinite Scrolling icon"><p>LTC: <span>$ 208.06-1.97 %</span></p></li>
+                    </ul>
+                </div>
+            </div>
+        </div> 
+    </section>
 
 <!-- Infinite Scrolling End -->
 
@@ -313,6 +357,7 @@
 
 <!-- Our Mission Part End -->
 
+
 <!-- Chose Us Part Start -->
 
 <section id="chose-us">
@@ -325,8 +370,8 @@
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-lg-4  text-center mt-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6 text-center mt-5">
                 <div class="chose-us-card">
                         <img src="images/pick-29.png" alt="">
                         <h3>INVESTMENT PLANNING</h3>
@@ -334,12 +379,10 @@
                         <div class="chose-us-btn animation-btn d-inline-block">
                         <a href="#"> Learn More</a> 
                         </div> 
-                    
                 </div> 
-                
             </div>
 
-            <div class="col-lg-4  text-center mt-5">
+            <div class="col-lg-4 col-md-6 text-center mt-5">
                 <div class="chose-us-card">
                         <img src="images/pick-17.png" alt="">
                         <h3>SAFE AND SECURE</h3>
@@ -350,7 +393,7 @@
                 </div> 
             </div>
 
-            <div class="col-lg-4  text-center mt-5">
+            <div class="col-lg-4 col-md-6 text-center mt-5">
                 <div class="chose-us-card">
                         <img src="images/pick-38.png" alt="">
                         <h3>BITCOIN TRANSACTION</h3>
@@ -367,9 +410,11 @@
 
 <!-- Chose Us Part end -->
 
+
 <!-- Counter Part Start -->
 
-    <div class="counter">
+<div class="counter">
+    <div class="container">
         <div class="row px-0">
             <div class="col-md-3 col-6 text-center">
                 <div class="counter_items">
@@ -377,7 +422,7 @@
                      <p>Satisfied Client</p>
                 </div>
             </div>
-
+    
             <div class="col-md-3 col-6 text-center">
              <div class="counter_items">
                  <h3 class="counter_number">333</h3> 
@@ -385,14 +430,14 @@
              </div>
              </div>
          
-             <div class="col-md-3 col-6 text-center">
+             <div class="col-md-3 mt-5 mt-md-0 col-6 text-center">
                  <div class="counter_items">
                      <h3 class="counter_number">444</h3> 
                      <p>Finished Project</p>
                  </div>
              </div>
-
-             <div class="col-md-3 col-6 text-center">
+    
+             <div class="col-md-3 mt-5 mt-md-0 col-6 text-center">
                  <div class="counter_items">
                      <h3 class="counter_number">555</h3> 
                      <p>Happy Customer</p>
@@ -400,16 +445,19 @@
              </div>
          </div>
     </div>
+</div>
 
 <!-- Counter Part End -->
 
-<!-- back to top -->
-
-<div class="backTop">
-    <i class="fas fa-chevron-up"></i>
-</div>
 
 <!-- back to top -->
+
+    <div class="backTop">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+
+<!-- back to top -->
+
 
 <!-- Subscribe part start -->
 
@@ -420,7 +468,7 @@
                     <h3>Get New Insights Weekly</h3>
                     <p>News letter dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Enter your email Email Your Address </p>
                 </div>
-                <div class="col-lg-6 subscribe-input">
+                <div class="col-lg-6 subscribe-input mt-5">
                     <div class="subscribe-input">
                         <input type="email" placeholder="Enter Your Email">
                         <button type="submit">Subscribe</button>
@@ -432,13 +480,13 @@
 
 <!-- Subscribe part End -->
 
-
+  
 <!-- footer part start -->
 
     <footer class="top_footer">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-sm-6 col-12 pt-md-4 footer1">
+                <div class="col-lg-4 col-sm-6 col-12 mt-4 pt-md-4 footer1">
                     <a href="index.html" class="">
                         <img src="images/logo-dark.png" alt="Footer Logo">
                     </a>
@@ -455,7 +503,7 @@
                     </ul>
                 </div> 
 
-                <div class="col-lg-2 col-sm-6 col-12 footer3">
+                <div class="col-lg-2 col-sm-6 col-12 mt-4 footer3 ps-lg-0 ps-sm-5">
                     <h4>Useful Links</h4>
                    <ul>
                        <li><i class="fas fa-angle-double-right"> </i> <a href="about.html">About</a></li>
@@ -466,7 +514,7 @@
                    </ul>
                 </div> 
 
-                <div class="col-lg-3 col-sm-6 col-12 footer2">
+                <div class="col-lg-3 col-sm-6 col-12 mt-4 footer2">
                     <h4>Contact</h4>
 
                     <div class=" footer2_location">
@@ -498,7 +546,7 @@
                             
                 </div> 
 
-                <div class="col-lg-3 col-sm-6 col-12 footer4">
+                <div class="col-lg-3 col-sm-6 col-12 mt-4 footer4">
                     <h4>Newsletter</h4>
                     <input type="text" placeholder="Enter Your Email">
                     <div class="footer_btn animation-btn">
@@ -510,7 +558,7 @@
         </div>
     </footer>
 
-    <footer class="last_footer">
+    <footer class="last_footer d-md-block d-none">
         <div class="container">
             <div class="row justify-content-between">
                 <div class="col-8">

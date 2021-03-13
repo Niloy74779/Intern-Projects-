@@ -44,6 +44,61 @@
         text-align: center;
     }
 
+    /* about page */
+
+    .about-content .nav-link{
+        font-size: 15px;
+        padding: 5px;
+        margin-right: 10px;
+    }
+
+    /* service page */
+    .service-text h2{
+    font-size: 30px;
+    }
+    .service-text p{
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .srvice-detail-left h2{
+        font-size: 28px;
+        line-height: 52px;
+    }
+    .srvice-detail-left p{
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .srvice-detail-right h4{
+        font-size: 20px;
+    }
+    
+    .srvice-detail-right ul li{
+        
+        font-size: 14px;
+    }
+    .service-item h2{
+        font-size: 20px;
+    }
+
+    /* sign up page */
+
+    .sign-up-from{
+        padding: 30px 20px;
+        
+    }
+    .sign-up-heading h3{
+        font-size: 30px;
+    } 
+
+    .expart-profile h2{
+        font-size: 25px;
+    }
+
+    /* blog details */
+
+    .blog-comment.c-10{
+        margin-left: 100px !important;
+    }
   
 
   
@@ -81,16 +136,25 @@
 
     /* Counter Part */
     .counter_items .counter_number{
-        color: var(--white);
         font-size: 60px;
-        line-height: 76px;
-        font-weight: 800;
     }
     .counter_items p{
-        color: var(--main-color);
         font-size: 17px;
-        font-weight: 700;
     }
+
+    /* about page */
+
+    .about-content{
+        margin-top: 100px;
+    }
+
+    /* blog details */
+
+    .blog-comment.c-10{
+        margin-left: 80px !important;
+    }
+
+    
     
 
 
@@ -108,7 +172,13 @@
     }
     .section-heading p {
         font-size: 16px;
-        padding: 0px 30px;
+        padding: 0px ;
+    }
+
+    /* Animation Button */
+    
+    .animation-btn:hover a{
+        letter-spacing: 1px;
     }
 
     /* navbar part */
@@ -130,7 +200,38 @@
         color: #E21717;
         font-size: 19px;
     }
+
+    /* buy now part */
+
+    .buy-now-content h2{
+    font-size: 30px;
+    letter-spacing: 1px;
+    }
+    .buy-now-form h2{
+        font-size: 25px;
+        color: var(--main-color);
+    }
+    .buy-now-form{
+        background-color: var(--bg-color-2);
+    }
+    .buy-now-form p{
+        font-size: 15px;
+    }
+    .buy-now-btn.animation-btn{
+        margin-top: 50px;
+    }
+    .buy-now-btn.animation-btn a{
+        color: var(--white);
+    }
+
+    /* about page */
     
+    .about-content{
+        margin-top: 100px;
+    }
+    
+  
+
 
 
 
@@ -145,18 +246,115 @@
     /* Section heading start */
 
     .section-heading h2 {
-        font-size: 24px;
+        font-size: 23px;
     }
     .section-heading p {
-        font-size: 15px;
+        font-size: 13px;
         padding: 0px;
-        width: 100%;
     }
 
-     /* navbar part */
+    /* top header */
+    .top-header-account,
+    .header-icon{
+        margin-top: 10px;
+    }
+
+    /* navbar part */
      #customnav ul li ul{
         top: 44px;
         right: 20%;
+    }
+
+    /* buy now part */
+
+      .buy-now-content h2{
+        font-size: 19px;
+        }
+        .buy-now-content h3{
+            font-size: 14px;
+        }
+        .buy-now-form h2{
+            font-size: 21px;
+            line-height: 30px;
+            padding-bottom: 10px;
+        }
+        .buy-now-content p{
+            font-size: 13px;
+            text-align: justify;
+            line-height: 18px;
+        }
+        .buy-now-content  ul li{
+            font-size: 13px;
+        }
+        .buy-now-form{
+            background-color: var(--bg-color-2);
+        }
+        .buy-now-form h2{
+            font-size: 20px;
+            color: var(--main-color);
+        }
+        .buy-now-form p{
+            font-size: 14px;
+        }
+        .buy-now-btn.animation-btn{
+            margin-top: 50px;
+        }
+        .buy-now-btn.animation-btn a{
+            color: var(--white);
+        }
+        
+    /* about page */
+
+    .about-content .nav-link{
+        font-size: 13px;
+        padding: 7px;
+        margin-right: 5px;
+    }
+    .about-content{
+        margin-top: 100px;
+    }
+
+    .about-img img{
+        width: 100%;
+    }
+
+    /* SignUp page */
+
+    .sign-up-content i{
+        font-size: 40px;
+    }
+    .sign-up-content h3{
+        font-size: 20px;
+    }
+    
+    .sign-up-from{
+        padding: 30px 20px;
+        
+    }
+    .sign-up-heading h3{
+        font-size: 30px;
+    } 
+    
+    /* blog sidebar */
+
+    .blog-item h2{
+        font-size: 20px;
+    }
+    .blog-item p{
+        font-size: 16px !important;
+    }
+    .blog-item p strong{
+        font-size: 17px !important;
+    }
+
+    .blog-athor h5{
+        font-size: 17px;
+    }    
+    .blog-athor p{
+        font-size: 13px !important;
+    }  
+    .blog-comment.c-10{
+        margin-left: 0px !important;
     }
 
     
@@ -167,13 +365,192 @@
 
 
 @media(max-width:375px){
-    /* .section-heading h2 {
-        font-size: 24px;
+    /* top header */
+    #top-header{
+        display: none;
     }
-    .section-heading p {
+
+    /* navbar */
+
+    .search-bar i{
+        font-size: 14px;
+        margin: 0 7px;
+    }
+    .search_box form{
+        width: 300px;
+    }
+    .close{
+        top: 30px;
+        right: 30px;
+    }
+    
+    .search_box input{
         font-size: 15px;
-        padding: 0px;
-    } */
+        padding: 0px 30px;
+    }
+
+     /* Counter Part */
+     .counter_items .counter_number{
+        font-size: 50px;
+    }
+    .counter_items p{
+        font-size: 16px;
+    }
+
+    /* faq part */
+
+    #faq .accordion-button{
+        font-size: 16px;
+    }
+    #faq .collapsed{
+        font-size: 16px;
+    }
+    #faq .accordion-item .accordion-body{
+        font-size: 13px;
+    }
+    /* blog grid part */
+
+    .blog-grid-tag i,
+    .blog-grid-tag a{
+    font-size: 13px;
+    }
+    .blog-grid-content h3{
+    font-size: 18px;
+    text-align: center;
+    }
+    .blog-grid-content{
+    padding: 15px;
+    }
+    .blog-grid-content p{
+    font-size: 15px;
+    text-align: center;
+    }
+   
+    /* buy now part */
+
+    .buy-now-content h2{
+    font-size: 19px;
+    }
+    .buy-now-content h3{
+        font-size: 14px;
+    }
+    .buy-now-form h2{
+        font-size: 21px;
+        line-height: 30px;
+        padding-bottom: 10px;
+    }
+    .buy-now-content p{
+        font-size: 13px;
+        text-align: justify;
+        line-height: 18px;
+    }
+    .buy-now-content  ul li{
+        font-size: 13px;
+    }
+    .buy-now-form{
+        background-color: var(--bg-color-2);
+    }
+    .buy-now-form h2{
+        font-size: 20px;
+        color: var(--main-color);
+    }
+    .buy-now-form p{
+        font-size: 14px;
+    }
+    .buy-now-btn.animation-btn{
+        margin-top: 50px;
+    }
+    .buy-now-btn.animation-btn a{
+        color: var(--white);
+    }
+
+    /* live chart */
+
+    #live-chart .nav-link{
+        font-size: 13px;
+    }
+
+    /* Subscrive Input */
+
+    #subscribe h3{
+        font-size: 23px;
+        padding: 20px 0;
+        font-weight: 700;
+    }
+    .subscribe-input input{
+        padding: 13px;
+        font-size: 14px;
+    }
+    .subscribe-input button {
+        padding: 10px;
+        font-size: 14px;
+        bottom: 4px;
+        right: 4px;
+    }
+
+    /* footer part  */
+
+    .footer1 p{
+        font-size: 14px;
+    }
+
+    /* about page */
+
+      .about-content .nav-link{
+        font-size: 11px;
+        padding: 3px;
+        margin-right: 5px;
+    }
+    .about-content p{
+        font-size: 14px;
+    }
+    .about-content{
+        margin-top: 100px;
+    }
+
+     /* SignUp page */
+
+     .sign-up-content i{
+        font-size: 25px;
+    }
+    .sign-up-content h3{
+        font-size: 19px;
+    }
+    
+    .sign-up-from{
+        padding: 20px 10px;
+        
+    }
+    .sign-up-heading h3{
+        font-size: 24px;
+    } 
+    .sign-up-content{
+        padding: 10px;
+    }
+    
+    .sign-up-content p{
+        font-size: 13px ;
+        text-align: justify;
+    }
+
+    .sign-up-icon ul li i{
+        height: 40px;
+        width: 40px;
+        line-height: 40px;
+        font-size: 15px;
+    }
+
+    /* login page */
+    .login-media{
+        display: none;
+    }    
+    .login-btn{
+        width: 100%;
+    }
+    .login-from h6{
+        font-size: 14px;
+    } 
+
 
 }
 
